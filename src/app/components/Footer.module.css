@@ -1,0 +1,47 @@
+/* src/components/Footer.module.css */
+
+.footer {
+    margin: 0;
+    padding: 10px;
+    background-color: rgb(37, 37, 37);
+}
+
+.containerFooter {
+    max-width: 1280px;
+    margin: auto;
+    padding-right: 40px;
+    padding-left: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 1280px) {
+    .containerFooter {
+        max-width: 1024px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .containerFooter {
+        max-width: 768px;
+    }
+}
+
+@media (max-width: 768px) {
+    .containerFooter {
+        max-width: 576px;
+    }
+}
+
+.containerFooter p {
+    color: white;
+    text-align: center;
+    margin: auto;
+}
+
+@media (max-width: 768px) {
+    .containerFooter p {
+        font-size: .9rem;
+    }
+}

@@ -1,0 +1,60 @@
+.containerHeroExperience {
+    max-width: 1280px;
+    width: 100%;
+    margin: auto;
+    padding: 50px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 1280px) {
+    .containerHeroExperience {
+        max-width: 1024px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .containerHeroExperience {
+        max-width: 768px;
+    }
+}
+
+@media (max-width: 768px) {
+    .containerHeroExperience {
+        max-width: 576px;
+        flex-direction: column-reverse;
+    }
+
+    .experience h1, 
+    .experience h2 {
+        text-align: center;
+    }
+}
+
+.experience {
+    max-width: 400px;
+    width: 100%;
+}
+
+.experience h1 {
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.experience h2 {
+    color: rgb(255, 0, 72);
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.experienceImg {
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

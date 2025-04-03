@@ -1,0 +1,199 @@
+/* src/components/Contact.module.css */
+
+.sectionContact {
+    width: 100%;
+    list-style: none;
+    box-sizing: border-box;
+    min-height: 100vh;
+    margin: auto;
+}
+
+.containerHeroContact {
+    max-width: 1280px;
+    width: 100%;
+    margin: auto;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 1280px) {
+    .containerHeroContact {
+        max-width: 1024px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .containerHeroContact {
+        max-width: 768px;
+    }
+}
+
+@media (max-width: 768px) {
+    .containerHeroContact {
+        max-width: 576px;
+        flex-direction: column-reverse;
+    }
+}
+
+.contact {
+    max-width: 400px;
+    width: 100%;
+}
+
+.contact h1 {
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.contact h2 {
+    color: rgb(255, 0, 72);
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.contactImg {
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionContactForm {
+    width: 100%;
+    margin: auto;
+    padding: 50px 0;
+    background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgb(35, 35, 35) 56%);
+}
+
+/* Container Geral */
+.containerContactForm {
+    max-width: 1280px;
+    width: 100%;
+    padding: 50px 20px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+}
+
+@media (max-width: 1280px) {
+    .containerContactForm {
+        max-width: 1024px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .containerContactForm {
+        max-width: 768px;
+    }
+}
+
+@media (max-width: 768px) {
+    .containerContactForm {
+        max-width: 576px;
+    }
+}
+
+/* Formulário */
+.form {
+    max-width: 600px;
+    width: 100%;
+    background: linear-gradient(145deg, #1d1d1d, #292929);
+    padding: 30px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Campos do Formulário */
+.formContact {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formContact div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Labels */
+.formContact label {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+/* Inputs e Textarea */
+.formContact input,
+.formContact textarea {
+    background: #1d1d1d;
+    color: #fff;
+    border: 2px solid #ff0048;
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.formContact input:focus,
+.formContact textarea:focus {
+    border-color: #ff0048;
+    box-shadow: 0 0 10px rgba(255, 0, 72, 0.8);
+}
+
+/* Textarea */
+.formContact textarea {
+    resize: none;
+    min-height: 120px;
+}
+
+/* Botão de Envio */
+.formSubmit {
+    width: 100%;
+    max-width: 200px;
+    padding: 12px 20px;
+    margin-top: 20px;
+    background: linear-gradient(145deg, #ff0048, #e60042);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.formSubmit:hover {
+    background: linear-gradient(145deg, #e60042, #ff0048);
+    transform: translateY(-3px);
+    box-shadow: 0px 10px 20px rgba(255, 0, 72, 0.4);
+}
+
+.formSubmit:active {
+    transform: translateY(2px);
+    box-shadow: none;
+}
