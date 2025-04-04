@@ -5,6 +5,7 @@ import { FaReact, FaHtml5, FaCss3Alt } from "react-icons/fa";
 import { RiTailwindCssLine, RiComputerLine } from "react-icons/ri";
 import { SiReactrouter } from "react-icons/si";
 import { FiGithub } from "react-icons/fi";
+import { SiNextdotjs } from "react-icons/si";
 
 import ImgProjCard1 from '../../../public/assets/img-projeto-card-01.png';
 import ImgProjCard2 from '../../../public/assets/img-projeto-card-02.png';
@@ -71,8 +72,8 @@ export const cardProjects = [
         icon4: <SiReactrouter className='icon-tool'/>,
         iconbtn1: <RiComputerLine/>,
         iconbtn2: <FiGithub/>,
-        demo: "https://misael-alves-portfolio.vercel.app/",
-        github: "https://github.com/misaelalves99/misael-alves-portfolio"
+        demo: "https://misael-alves-portfolio-react.vercel.app/",
+        github: "https://github.com/misaelalves99/misael-alves-portfolio-react"
     },
 
     {
@@ -87,8 +88,8 @@ export const cardProjects = [
         icon5: <SiReactrouter className='icon-tool'/>,
         iconbtn1: <RiComputerLine/>,
         iconbtn2: <FiGithub/>,
-        demo: "https://fashion-shop-six.vercel.app/",
-        github: "https://github.com/misaelalves99/fashion-shop"
+        demo: "https://fashion-shop-react-six.vercel.app/",
+        github: "https://github.com/misaelalves99/fashion-shop-react"
     },
 
     {
@@ -99,11 +100,12 @@ export const cardProjects = [
         icon1: <FaReact className='icon-tool' />,
         icon2: <FaHtml5 className='icon-tool' />,
         icon3: <FaCss3Alt className='icon-tool' />,
+        icon4: <SiNextdotjs className='icon-tool'/>,
         icon5: <SiReactrouter className='icon-tool'/>,
         iconbtn1: <RiComputerLine/>,
         iconbtn2: <FiGithub/>,
-        demo: "https://e-commerce-shop-indol.vercel.app/",
-        github: "https://github.com/misaelalves99/e-commerce-shop"
+        demo: "https://e-commerce-shop-next-xi.vercel.app/",
+        github: "https://github.com/misaelalves99/e-commerce-shop-next"
     },
     {
         id: 4,
@@ -113,11 +115,12 @@ export const cardProjects = [
         icon1: <FaReact className='icon-tool' />,
         icon2: <FaHtml5 className='icon-tool' />,
         icon3: <FaCss3Alt className='icon-tool' />,
+        icon4: <SiNextdotjs className='icon-tool'/>,
         icon5: <SiReactrouter className='icon-tool'/>,
         iconbtn1: <RiComputerLine/>,
         iconbtn2: <FiGithub/>,
-        demo: "https://ms-pet.vercel.app/",
-        github: "https://github.com/misaelalves99/ms_pet"
+        demo: "https://ms-pet-next.vercel.app/",
+        github: "https://github.com/misaelalves99/ms-pet-next"
     },
     {
         id: 5,
@@ -130,8 +133,8 @@ export const cardProjects = [
         icon5: <SiReactrouter className='icon-tool'/>,
         iconbtn1: <RiComputerLine/>,
         iconbtn2: <FiGithub/>,
-        demo: "https://ms-food.vercel.app/",
-        github: "https://github.com/misaelalves99/ms_food"
+        demo: "https://ms-food-react.vercel.app/",
+        github: "https://github.com/misaelalves99/ms-food-react"
     },
     {
         id: 6,
@@ -144,7 +147,7 @@ export const cardProjects = [
         icon5: <SiReactrouter className='icon-tool'/>,
         iconbtn1: <RiComputerLine/>,
         iconbtn2: <FiGithub/>,
-        demo: "https://ms-nutri.vercel.app/",
-        github: "https://github.com/misaelalves99/ms-nutri"
+        demo: "https://ms-nutri-react.vercel.app/",
+        github: "https://github.com/misaelalves99/ms-nutri-react"
     }
 ]

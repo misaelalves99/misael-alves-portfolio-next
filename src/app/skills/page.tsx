@@ -11,6 +11,8 @@ import { RiTailwindCssLine } from "react-icons/ri";
 import { SiReactrouter } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 import { DiIllustrator } from "react-icons/di";
+import { BiLogoTypescript } from "react-icons/bi";
+import { SiNextdotjs } from "react-icons/si";
 
 export default function Skills() {
   return (
@@ -41,6 +43,9 @@ export default function Skills() {
             <div className={styles.itemLanguages}>
               <IoLogoJavascript className={styles.iconLanguages} />
             </div>
+            <div className={styles.itemLanguages}>
+              <BiLogoTypescript className={styles.iconLanguages} />
+            </div>
           </div>
         </div>
 
@@ -52,6 +57,9 @@ export default function Skills() {
           <div className={styles.librariesItems}>
             <div className={styles.itemLibraries}>
               <FaReact className={styles.iconLibraries} />
+            </div>
+            <div className={styles.itemLibraries}>
+              <SiNextdotjs className={styles.iconLibraries} />
             </div>
             <div className={styles.itemLibraries}>
               <RiTailwindCssLine className={styles.iconLibraries} />
