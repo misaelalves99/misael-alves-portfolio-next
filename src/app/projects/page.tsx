@@ -1,8 +1,8 @@
+// app/projects/page.tsx
+
 import styles from "./Projects.module.css";
-import Image from "next/image";
-import Link from "next/link";
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import { cardProjects } from "../api/data";
+import ProjectCard from "../components/ProjectCard";
 
 export default function ProjectsPage() {
   return (
@@ -18,36 +18,7 @@ export default function ProjectsPage() {
         <div className={styles.containerProjects}>
           <div className={styles.projectsGrid}>
             {cardProjects.map((project) => (
-              <div key={project.id} className={styles.projectCard}>
-                <div className={styles.projectImage}>
-                  <Image src={project.img} alt={project.title} width={400} height={200} />
-                </div>
-                <div className={styles.projectInfo}>
-                  <h2>{project.title}</h2>
-                  <p>{project.desc}</p>
-                  <div className={styles.projectTools}>
-                    {[
-                      project.icon1,
-                      project.icon2,
-                      project.icon3,
-                      project.icon4,
-                      project.icon5,
-                    ]
-                      .filter(Boolean) // Remove valores `undefined`
-                      .map((icon, index) => (
-                        <span key={index} className={styles.toolIcon}>{icon}</span>
-                      ))}
-                  </div>
-                </div>
-                <div className={styles.projectButtons}>
-                  <Link href={project.demo} className={`${styles.btn} ${styles.btnDemo}`} target="_blank" rel="noopener noreferrer">
-                    Demo <FaExternalLinkAlt />
-                  </Link>
-                  <Link href={project.github} className={`${styles.btn} ${styles.btnGithub}`} target="_blank" rel="noopener noreferrer">
-                    GitHub <FaGithub />
-                  </Link>
-                </div>
-              </div>
+              <ProjectCard key={project.id} project={project} />
             ))}
           </div>
         </div>
