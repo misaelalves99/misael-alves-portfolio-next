@@ -3,6 +3,7 @@ import { cardProjects } from "../api/data/projects";
 import { cardProjectsAll } from "../api/data/projects-all";
 import ProjectCard from "../components/ProjectCard";
 import ProjectCardAll from "../components/ProjectCardAll";
+import { FaTasks } from "react-icons/fa";
 
 export default function ProjectsPage() {
   return (
@@ -11,6 +12,9 @@ export default function ProjectsPage() {
         <div className={styles.projects}>
           <h1>Meus Projetos</h1>
           <h2>Explorando novas tecnologias e inovações.</h2>
+        </div>
+        <div className={styles.projectsImg}>
+          <FaTasks className={styles.heroIcon} />
         </div>
       </div>
 

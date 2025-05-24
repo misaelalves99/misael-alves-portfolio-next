@@ -8,6 +8,7 @@
 
 .containerHeroSkills {
     max-width: 1280px;
+    min-height: 60vh;
     width: 100%;
     margin: auto;
     padding: 50px 40px;
