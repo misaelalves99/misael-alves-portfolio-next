@@ -1,8 +1,8 @@
-// types/project-data.ts
+// types/project-data-Full.ts
 import { StaticImageData } from "next/image";
 import { IconType } from "react-icons";
 
-export interface ProjectData {
+export interface ProjectDataFull {
   id: number;
   img: StaticImageData;
   title: string;

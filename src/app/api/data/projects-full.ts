@@ -20,9 +20,9 @@ import ImgProjCard4 from "../../../../public/assets/img-projeto-card-04.png";
 import ImgProjCard5 from "../../../../public/assets/img-projeto-card-05.png";
 import ImgProjCard6 from "../../../../public/assets/img-projeto-card-06.png";
 
-import { ProjectData } from "../../types/project-data";
+import { ProjectDataFull } from "../../types/project-data-full";
 
-export const cardProjects: ProjectData[] = [
+export const cardProjectsFull: ProjectDataFull[] = [
   {
     id: 1,
     img: ImgProjCard1,

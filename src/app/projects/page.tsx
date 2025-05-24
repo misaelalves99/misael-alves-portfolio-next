@@ -2,9 +2,9 @@
 
 import { useState } from "react";
 import styles from "./Projects.module.css";
-import { cardProjects } from "../api/data/projects";
+import { cardProjectsFull } from "../api/data/projects-full";
 import { cardProjectsAll } from "../api/data/projects-all";
-import ProjectCard from "../components/ProjectCard";
+import ProjectCard from "../components/ProjectCardFull";
 import ProjectCardAll from "../components/ProjectCardAll";
 import { FaTasks } from "react-icons/fa";
 
@@ -17,7 +17,7 @@ export default function ProjectsPage() {
   const [selectedCategorySpecific, setSelectedCategorySpecific] = useState("react");
 
   // Filtragem sem "todos"
-  const filteredCompleteProjects = cardProjects.filter(
+  const filteredCompleteProjects = cardProjectsFull.filter(
     (project) => project.category === selectedCategoryComplete
   );
 

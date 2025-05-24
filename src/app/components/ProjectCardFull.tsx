@@ -3,10 +3,10 @@
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
-import styles from "./ProjectCard.module.css";
+import styles from "./ProjectCardFull.module.css";
 import { IconType } from "react-icons";
 
-type ProjectCardProps = {
+type ProjectCardFullProps = {
   project: {
     id: number;
     title: string;
@@ -18,7 +18,7 @@ type ProjectCardProps = {
   };
 };
 
-export default function ProjectCard({ project }: ProjectCardProps) {
+export default function ProjectCard({ project }: ProjectCardFullProps) {
   return (
     <div className={styles.card}>
       <div className={styles.imageWrapper}>
