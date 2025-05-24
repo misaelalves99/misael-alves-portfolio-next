@@ -23,6 +23,16 @@ export default function ProjectsPage() {
           </div>
         </div>
       </div>
+
+      <div className={styles.sectionItemProjects}>
+        <div className={styles.containerProjects}>
+          <div className={styles.projectsGrid}>
+            {cardProjects.map((project) => (
+              <ProjectCard key={project.id} project={project} />
+            ))}
+          </div>
+        </div>
+      </div>
     </section>
   );
 }
