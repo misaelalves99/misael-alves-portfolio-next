@@ -1,41 +1,37 @@
-// app/components/ProjectCard.tsx
+// app/components/ProjectCardAll.tsx
 
-"use client";
+import styles from "./ProjectCardAll.module.css";
+import { IconType } from "react-icons";
 
-import Image from "next/image";
-import Link from "next/link";
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
-import styles from "../projects/Projects.module.css";
-import { Project } from "../types/project";
+type ProjectCardAllProps = {
+  project: {
+    id: number;
+    title: string;
+    desc: string;
+    icons: string[];
+    demo: string;
+    github: string;
+    iconComponent: IconType;
+  };
+};
 
-interface ProjectCardProps {
-  project: Project;
-}
-
-export default function ProjectCard({ project }: ProjectCardProps) {
-  const icons = [project.icon1, project.icon2, project.icon3, project.icon4, project.icon5].filter(Boolean);
+export default function ProjectCardAll({ project }: ProjectCardAllProps) {
+  const Icon = project.iconComponent;
 
   return (
-    <div className={styles.projectCard}>
-      <div className={styles.projectImage}>
-        <Image src={project.img} alt={project.title} width={400} height={200} />
+    <div className={styles.card}>
+      <div className={styles.iconContainer}>
+        <Icon size={64} color="#ff006f" />
       </div>
-      <div className={styles.projectInfo}>
-        <h2>{project.title}</h2>
-        <p>{project.desc}</p>
-        <div className={styles.projectTools}>
-          {icons.map((icon, index) => (
-            <span key={index} className={styles.toolIcon}>{icon}</span>
-          ))}
-        </div>
-      </div>
-      <div className={styles.projectButtons}>
-        <Link href={project.demo} className={`${styles.btn} ${styles.btnDemo}`} target="_blank" rel="noopener noreferrer">
-          Demo <FaExternalLinkAlt />
-        </Link>
-        <Link href={project.github} className={`${styles.btn} ${styles.btnGithub}`} target="_blank" rel="noopener noreferrer">
-          GitHub <FaGithub />
-        </Link>
+      <h2 className={styles.title}>{project.title}</h2>
+      <p className={styles.desc}>{project.desc}</p>
+      <div className={styles.links}>
+        <a href={project.demo} target="_blank" rel="noopener noreferrer" className={styles.link}>
+          Demo
+        </a>
+        <a href={project.github} target="_blank" rel="noopener noreferrer" className={styles.link}>
+          GitHub
+        </a>
       </div>
     </div>
   );

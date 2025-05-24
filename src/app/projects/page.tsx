@@ -1,8 +1,8 @@
-// app/projects/page.tsx
-
 import styles from "./Projects.module.css";
-import { cardProjects } from "../api/data";
+import { cardProjects } from "../api/data/projects";
+import { cardProjectsAll } from "../api/data/projects-all";
 import ProjectCard from "../components/ProjectCard";
+import ProjectCardAll from "../components/ProjectCardAll";
 
 export default function ProjectsPage() {
   return (
@@ -14,7 +14,9 @@ export default function ProjectsPage() {
         </div>
       </div>
 
+      {/* Projetos Completos */}
       <div className={styles.sectionItemProjects}>
+        <h3 className={styles.sectionTitle}>Projetos Completos</h3>
         <div className={styles.containerProjects}>
           <div className={styles.projectsGrid}>
             {cardProjects.map((project) => (
@@ -24,11 +26,13 @@ export default function ProjectsPage() {
         </div>
       </div>
 
+      {/* Projetos Específicos */}
       <div className={styles.sectionItemProjects}>
+        <h3 className={styles.sectionTitle}>Projetos Específicos</h3>
         <div className={styles.containerProjects}>
           <div className={styles.projectsGrid}>
-            {cardProjects.map((project) => (
-              <ProjectCard key={project.id} project={project} />
+            {cardProjectsAll.map((project) => (
+              <ProjectCardAll key={project.id} project={project} />
             ))}
           </div>
         </div>

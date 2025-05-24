@@ -59,6 +59,16 @@
     background: linear-gradient(45deg, rgba(0, 0, 0, 1) 0%, rgb(35, 35, 35) 56%);
 }
 
+.sectionTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #ff006f; /* rosa fluorescente */
+  /* text-shadow: 0 0 8px #ff006f; */
+  letter-spacing: 0.5px;
+}
+
 .containerProjects {
     max-width: 1280px;
     width: 100%;
