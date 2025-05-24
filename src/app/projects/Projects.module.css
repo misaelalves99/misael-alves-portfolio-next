@@ -23,16 +23,16 @@
 
 .projects h1 {
     color: white;
+    font-family: "Ubuntu", sans-serif;
     font-weight: 700;
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
 }
 
 .projects h2 {
-    color: white;
+    color: rgb(255, 0, 72);
+    font-family: "Ubuntu", sans-serif;
     font-weight: 400;
     font-size: 1.5rem;
-    max-width: 500px;
 }
 
 .projectsImg {
@@ -81,13 +81,43 @@
 }
 
 .sectionTitle {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
   text-align: center;
   color: #ff006f; /* rosa fluorescente */
   /* text-shadow: 0 0 8px #ff006f; */
   letter-spacing: 0.5px;
+}
+
+.filterButtons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.filterBtn {
+  background-color: #1f2937;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.filterBtn:hover {
+  background-color: #374151;
+}
+
+.active {
+  background: linear-gradient(135deg, #ff0048, #ff6680);
+  color: white;
+  border-color: #ff0048;
+  transform: scale(1.05);
 }
 
 .containerProjects {

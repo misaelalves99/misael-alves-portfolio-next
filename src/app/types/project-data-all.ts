@@ -10,4 +10,5 @@ export interface ProjectDataAll {
   demo: string;
   github: string;
   iconComponent?: IconType;
+  category: string;
 }

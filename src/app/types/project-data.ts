@@ -9,4 +9,5 @@ export interface ProjectData {
   icons: string[];
   demo: string;
   github: string;
+  category: string
 }
