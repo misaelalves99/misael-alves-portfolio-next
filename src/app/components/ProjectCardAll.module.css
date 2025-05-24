@@ -20,13 +20,14 @@
 .iconContainer {
   display: flex;
   justify-content: center;
-  margin-bottom: 1rem;
+  margin-bottom: 12px;
 }
 
 .title {
-  font-size: 1.25rem;
+  font-size: 1rem;
+  color: #666;
+  margin: 12px 0;
   font-weight: 600;
-  margin-bottom: 0.5rem;
   text-align: center;
 }
 
@@ -37,16 +38,37 @@
   text-align: center;
 }
 
+.techIcons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.techIcon {
+  color: #444;
+  transition: color 0.3s ease;
+}
+
+.techIcon:hover {
+  color: #007bff;
+}
+
 .links {
   display: flex;
   justify-content: space-around;
 }
 
 .link {
-  color: #ff006f; /* text-pink-400 */
+  color: #ff006f;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
 }
 
 .link:hover {
   text-decoration: underline;
 }
+

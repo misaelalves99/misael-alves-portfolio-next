@@ -1,5 +1,7 @@
 // app/components/ProjectCardAll.tsx
 
+import Link from "next/link";
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import styles from "./ProjectCardAll.module.css";
 import { IconType } from "react-icons";
 
@@ -8,7 +10,7 @@ type ProjectCardAllProps = {
     id: number;
     title: string;
     desc: string;
-    icons: string[];
+    icons: IconType[];
     demo: string;
     github: string;
     iconComponent: IconType;
@@ -16,22 +18,31 @@ type ProjectCardAllProps = {
 };
 
 export default function ProjectCardAll({ project }: ProjectCardAllProps) {
-  const Icon = project.iconComponent;
+  const IconMain = project.iconComponent;
 
   return (
     <div className={styles.card}>
       <div className={styles.iconContainer}>
-        <Icon size={64} color="#ff006f" />
+        <IconMain size={64} color="#ff006f" />
       </div>
+
       <h2 className={styles.title}>{project.title}</h2>
       <p className={styles.desc}>{project.desc}</p>
+
+      {/* Ícones de tecnologias */}
+      <div className={styles.techIcons}>
+        {project.icons.map((TechIcon, index) => (
+          <TechIcon key={index} size={22} className={styles.techIcon} />
+        ))}
+      </div>
+
       <div className={styles.links}>
-        <a href={project.demo} target="_blank" rel="noopener noreferrer" className={styles.link}>
-          Demo
-        </a>
-        <a href={project.github} target="_blank" rel="noopener noreferrer" className={styles.link}>
-          GitHub
-        </a>
+        <Link href={project.demo} target="_blank" rel="noopener noreferrer" className={styles.link}>
+          Demo <FaExternalLinkAlt />
+        </Link>
+        <Link href={project.github} target="_blank" rel="noopener noreferrer" className={styles.link}>
+          GitHub <FaGithub />
+        </Link>
       </div>
     </div>
   );

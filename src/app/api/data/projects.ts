@@ -1,4 +1,18 @@
 // app/data/cardProjects.ts
+
+import {
+  FaReact,
+  FaHtml5,
+  FaCss3Alt,
+  FaJsSquare
+} from "react-icons/fa";
+
+import {
+  SiTypescript,
+  SiNextdotjs,
+  SiVuedotjs
+} from "react-icons/si";
+
 import ImgProjCard1 from "../../../../public/assets/img-projeto-card-01.png";
 import ImgProjCard2 from "../../../../public/assets/img-projeto-card-02.png";
 import ImgProjCard3 from "../../../../public/assets/img-projeto-card-03.png";
@@ -14,7 +28,7 @@ export const cardProjects: ProjectData[] = [
     img: ImgProjCard1,
     title: "PORTFÓLIO",
     desc: "Este é meu portfólio pessoal. Aqui, mostro minhas principais habilidades como desenvolvedor front-end.",
-    icons: ["FaReact", "FaHtml5", "FaCss3Alt", "SiReactrouter"],
+    icons: [FaReact, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
     demo: "https://misael-alves-portfolio-react.vercel.app/",
     github: "https://github.com/misaelalves99/misael-alves-portfolio-react",
     category: "react"
@@ -24,7 +38,7 @@ export const cardProjects: ProjectData[] = [
     img: ImgProjCard2,
     title: "FASHION SHOP",
     desc: "Um projeto pessoal com produtos de moda feminina, permitindo filtrar a sua categoria desejada.",
-    icons: ["FaReact", "FaHtml5", "FaCss3Alt", "RiTailwindCssLine", "SiReactrouter"],
+    icons: [FaReact, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
     demo: "https://fashion-shop-react-six.vercel.app/",
     github: "https://github.com/misaelalves99/fashion-shop-react",
     category: "react"
@@ -34,9 +48,9 @@ export const cardProjects: ProjectData[] = [
     img: ImgProjCard3,
     title: "E-COMMERCE SHOP",
     desc: "Loja virtual com categorias de produtos para filtrar e efetuar a compra.",
-    icons: ["FaReact", "FaHtml5", "FaCss3Alt", "SiNextdotjs", "SiReactrouter"],
-    demo: "https://e-commerce-shop-next-xi.vercel.app/",
-    github: "https://github.com/misaelalves99/e-commerce-shop-next",
+    icons: [FaReact, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
+    demo: "https://e-commerce-shop-react-indol.vercel.app/",
+    github: "https://github.com/misaelalves99/e-commerce-shop-react",
     category: "react"
   },
   {
@@ -44,9 +58,9 @@ export const cardProjects: ProjectData[] = [
     img: ImgProjCard4,
     title: "MS PET",
     desc: "Proporciona o agendamento de uma visita para adoção de animais.",
-    icons: ["FaReact", "FaHtml5", "FaCss3Alt", "SiNextdotjs", "SiReactrouter"],
-    demo: "https://ms-pet-next.vercel.app/",
-    github: "https://github.com/misaelalves99/ms-pet-next",
+    icons: [FaReact, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
+    demo: "https://ms-pet-react.vercel.app/",
+    github: "https://github.com/misaelalves99/ms-pet-react",
     category: "react"
   },
   {
@@ -54,7 +68,7 @@ export const cardProjects: ProjectData[] = [
     img: ImgProjCard5,
     title: "MS FOOD",
     desc: "Sistema de anotação de pedidos do cliente em restaurante.",
-    icons: ["FaReact", "FaHtml5", "FaCss3Alt", "SiReactrouter"],
+    icons: [FaReact, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
     demo: "https://ms-food-react.vercel.app/",
     github: "https://github.com/misaelalves99/ms-food-react",
     category: "react"
@@ -64,7 +78,7 @@ export const cardProjects: ProjectData[] = [
     img: ImgProjCard6,
     title: "MS NUTRI",
     desc: "Projeto de informações de alimentos nutritivos para saúde geral.",
-    icons: ["FaReact", "FaHtml5", "FaCss3Alt", "SiReactrouter"],
+    icons: [FaReact, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
     demo: "https://ms-nutri-react.vercel.app/",
     github: "https://github.com/misaelalves99/ms-nutri-react",
     category: "react"
@@ -74,9 +88,9 @@ export const cardProjects: ProjectData[] = [
     img: ImgProjCard1,
     title: "PORTFÓLIO",
     desc: "Este é meu portfólio pessoal. Aqui, mostro minhas principais habilidades como desenvolvedor front-end.",
-    icons: ["FaReact", "FaHtml5", "FaCss3Alt", "SiReactrouter"],
-    demo: "https://misael-alves-portfolio-react.vercel.app/",
-    github: "https://github.com/misaelalves99/misael-alves-portfolio-react",
+    icons: [SiNextdotjs, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
+    demo: "https://misael-alves-portfolio-next.vercel.app/",
+    github: "https://github.com/misaelalves99/misael-alves-portfolio-next",
     category: "next"
   },
   {
@@ -84,9 +98,9 @@ export const cardProjects: ProjectData[] = [
     img: ImgProjCard2,
     title: "FASHION SHOP",
     desc: "Um projeto pessoal com produtos de moda feminina, permitindo filtrar a sua categoria desejada.",
-    icons: ["FaReact", "FaHtml5", "FaCss3Alt", "RiTailwindCssLine", "SiReactrouter"],
-    demo: "https://fashion-shop-react-six.vercel.app/",
-    github: "https://github.com/misaelalves99/fashion-shop-react",
+    icons: [SiNextdotjs, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
+    demo: "#",
+    github: "#",
     category: "next"
   },
   {
@@ -94,7 +108,7 @@ export const cardProjects: ProjectData[] = [
     img: ImgProjCard3,
     title: "E-COMMERCE SHOP",
     desc: "Loja virtual com categorias de produtos para filtrar e efetuar a compra.",
-    icons: ["FaReact", "FaHtml5", "FaCss3Alt", "SiNextdotjs", "SiReactrouter"],
+    icons: [SiNextdotjs, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
     demo: "https://e-commerce-shop-next-xi.vercel.app/",
     github: "https://github.com/misaelalves99/e-commerce-shop-next",
     category: "next"
@@ -104,7 +118,7 @@ export const cardProjects: ProjectData[] = [
     img: ImgProjCard4,
     title: "MS PET",
     desc: "Proporciona o agendamento de uma visita para adoção de animais.",
-    icons: ["FaReact", "FaHtml5", "FaCss3Alt", "SiNextdotjs", "SiReactrouter"],
+    icons: [SiNextdotjs, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
     demo: "https://ms-pet-next.vercel.app/",
     github: "https://github.com/misaelalves99/ms-pet-next",
     category: "next"
@@ -114,9 +128,9 @@ export const cardProjects: ProjectData[] = [
     img: ImgProjCard5,
     title: "MS FOOD",
     desc: "Sistema de anotação de pedidos do cliente em restaurante.",
-    icons: ["FaReact", "FaHtml5", "FaCss3Alt", "SiReactrouter"],
-    demo: "https://ms-food-react.vercel.app/",
-    github: "https://github.com/misaelalves99/ms-food-react",
+    icons: [SiNextdotjs, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
+    demo: "#",
+    github: "#",
     category: "next"
   },
   {
@@ -124,9 +138,9 @@ export const cardProjects: ProjectData[] = [
     img: ImgProjCard6,
     title: "MS NUTRI",
     desc: "Projeto de informações de alimentos nutritivos para saúde geral.",
-    icons: ["FaReact", "FaHtml5", "FaCss3Alt", "SiReactrouter"],
-    demo: "https://ms-nutri-react.vercel.app/",
-    github: "https://github.com/misaelalves99/ms-nutri-react",
+    icons: [SiNextdotjs, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
+    demo: "#",
+    github: "#",
     category: "next"
   },
     {
@@ -134,9 +148,9 @@ export const cardProjects: ProjectData[] = [
     img: ImgProjCard1,
     title: "PORTFÓLIO",
     desc: "Este é meu portfólio pessoal. Aqui, mostro minhas principais habilidades como desenvolvedor front-end.",
-    icons: ["FaReact", "FaHtml5", "FaCss3Alt", "SiReactrouter"],
-    demo: "https://misael-alves-portfolio-react.vercel.app/",
-    github: "https://github.com/misaelalves99/misael-alves-portfolio-react",
+    icons: [SiVuedotjs, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
+    demo: "#",
+    github: "#",
     category: "vue"
   },
   {
@@ -144,9 +158,9 @@ export const cardProjects: ProjectData[] = [
     img: ImgProjCard2,
     title: "FASHION SHOP",
     desc: "Um projeto pessoal com produtos de moda feminina, permitindo filtrar a sua categoria desejada.",
-    icons: ["FaReact", "FaHtml5", "FaCss3Alt", "RiTailwindCssLine", "SiReactrouter"],
-    demo: "https://fashion-shop-react-six.vercel.app/",
-    github: "https://github.com/misaelalves99/fashion-shop-react",
+    icons: [SiVuedotjs, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
+    demo: "#",
+    github: "#",
     category: "vue"
   },
   {
@@ -154,9 +168,9 @@ export const cardProjects: ProjectData[] = [
     img: ImgProjCard3,
     title: "E-COMMERCE SHOP",
     desc: "Loja virtual com categorias de produtos para filtrar e efetuar a compra.",
-    icons: ["FaReact", "FaHtml5", "FaCss3Alt", "SiNextdotjs", "SiReactrouter"],
-    demo: "https://e-commerce-shop-next-xi.vercel.app/",
-    github: "https://github.com/misaelalves99/e-commerce-shop-next",
+    icons: [SiVuedotjs, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
+    demo: "#",
+    github: "#",
     category: "vue"
   },
   {
@@ -164,9 +178,9 @@ export const cardProjects: ProjectData[] = [
     img: ImgProjCard4,
     title: "MS PET",
     desc: "Proporciona o agendamento de uma visita para adoção de animais.",
-    icons: ["FaReact", "FaHtml5", "FaCss3Alt", "SiNextdotjs", "SiReactrouter"],
-    demo: "https://ms-pet-next.vercel.app/",
-    github: "https://github.com/misaelalves99/ms-pet-next",
+    icons: [SiVuedotjs, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
+    demo: "#",
+    github: "#",
     category: "vue"
   },
   {
@@ -174,9 +188,9 @@ export const cardProjects: ProjectData[] = [
     img: ImgProjCard5,
     title: "MS FOOD",
     desc: "Sistema de anotação de pedidos do cliente em restaurante.",
-    icons: ["FaReact", "FaHtml5", "FaCss3Alt", "SiReactrouter"],
-    demo: "https://ms-food-react.vercel.app/",
-    github: "https://github.com/misaelalves99/ms-food-react",
+    icons: [SiVuedotjs, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
+    demo: "#",
+    github: "#",
     category: "vue"
   },
   {
@@ -184,9 +198,9 @@ export const cardProjects: ProjectData[] = [
     img: ImgProjCard6,
     title: "MS NUTRI",
     desc: "Projeto de informações de alimentos nutritivos para saúde geral.",
-    icons: ["FaReact", "FaHtml5", "FaCss3Alt", "SiReactrouter"],
-    demo: "https://ms-nutri-react.vercel.app/",
-    github: "https://github.com/misaelalves99/ms-nutri-react",
+    icons: [SiVuedotjs, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
+    demo: "#",
+    github: "#",
     category: "vue"
   },
 ];

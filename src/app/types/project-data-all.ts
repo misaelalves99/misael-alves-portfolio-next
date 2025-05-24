@@ -6,7 +6,7 @@ export interface ProjectDataAll {
   id: number;
   title: string;
   desc: string;
-  icons: string[];
+  icons: IconType[];
   demo: string;
   github: string;
   iconComponent?: IconType;

@@ -1,4 +1,3 @@
-// app/projects/page.tsx
 "use client";
 
 import { useState } from "react";
@@ -9,23 +8,22 @@ import ProjectCard from "../components/ProjectCard";
 import ProjectCardAll from "../components/ProjectCardAll";
 import { FaTasks } from "react-icons/fa";
 
-// Categorias disponíveis
-const categories = ["todos", "react", "next", "vue"];
+// Categorias disponíveis (sem "todos")
+const categories = ["react", "next", "vue"];
 
 export default function ProjectsPage() {
-  // Filtro separado para cada seção
-  const [selectedCategoryComplete, setSelectedCategoryComplete] = useState("todos");
-  const [selectedCategorySpecific, setSelectedCategorySpecific] = useState("todos");
+  // Categoria padrão: "react"
+  const [selectedCategoryComplete, setSelectedCategoryComplete] = useState("react");
+  const [selectedCategorySpecific, setSelectedCategorySpecific] = useState("react");
 
-  const filteredCompleteProjects =
-    selectedCategoryComplete === "todos"
-      ? cardProjects
-      : cardProjects.filter((project) => project.category === selectedCategoryComplete);
+  // Filtragem sem "todos"
+  const filteredCompleteProjects = cardProjects.filter(
+    (project) => project.category === selectedCategoryComplete
+  );
 
-  const filteredSpecificProjects =
-    selectedCategorySpecific === "todos"
-      ? cardProjectsAll
-      : cardProjectsAll.filter((project) => project.category === selectedCategorySpecific);
+  const filteredSpecificProjects = cardProjectsAll.filter(
+    (project) => project.category === selectedCategorySpecific
+  );
 
   return (
     <section className={styles.sectionProjects}>
