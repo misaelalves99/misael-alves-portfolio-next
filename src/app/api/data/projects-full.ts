@@ -99,8 +99,8 @@ export const cardProjectsFull: ProjectDataFull[] = [
     title: "FASHION SHOP",
     desc: "Um projeto pessoal com produtos de moda feminina, permitindo filtrar a sua categoria desejada.",
     icons: [SiNextdotjs, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
-    demo: "#",
-    github: "#",
+    demo: "https://fashion-shop-next-beta.vercel.app/",
+    github: "https://github.com/misaelalves99/fashion-shop-next",
     category: "next"
   },
   {
@@ -130,7 +130,7 @@ export const cardProjectsFull: ProjectDataFull[] = [
     desc: "Sistema de anotação de pedidos do cliente em restaurante.",
     icons: [SiNextdotjs, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
     demo: "#",
-    github: "#",
+    github: "https://github.com/misaelalves99/ms-food-next",
     category: "next"
   },
   {
@@ -139,11 +139,11 @@ export const cardProjectsFull: ProjectDataFull[] = [
     title: "MS NUTRI",
     desc: "Projeto de informações de alimentos nutritivos para saúde geral.",
     icons: [SiNextdotjs, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
-    demo: "#",
-    github: "#",
+    demo: "https://ms-nutri-next.vercel.app/",
+    github: "https://github.com/misaelalves99/ms-nutri-next",
     category: "next"
   },
-    {
+  {
     id: 13,
     img: ImgProjCard1,
     title: "PORTFÓLIO",
