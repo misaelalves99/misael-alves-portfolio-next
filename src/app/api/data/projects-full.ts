@@ -129,7 +129,7 @@ export const cardProjectsFull: ProjectDataFull[] = [
     title: "MS FOOD",
     desc: "Sistema de anotação de pedidos do cliente em restaurante.",
     icons: [SiNextdotjs, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
-    demo: "#",
+    demo: "https://ms-food-next.onrender.com/",
     github: "https://github.com/misaelalves99/ms-food-next",
     category: "next"
   },
