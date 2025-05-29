@@ -29,7 +29,7 @@ export const cardProjectsFull: ProjectDataFull[] = [
     title: "PORTFÓLIO",
     desc: "Este é meu portfólio pessoal. Aqui, mostro minhas principais habilidades como desenvolvedor front-end.",
     icons: [FaReact, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
-    demo: "https://misael-alves-portfolio-react.vercel.app/",
+    demo: "https://misael-alves-portfolio-react-one.vercel.app/",
     github: "https://github.com/misaelalves99/misael-alves-portfolio-react",
     category: "react"
   },
