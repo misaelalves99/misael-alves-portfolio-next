@@ -37,7 +37,7 @@ export const cardProjectsFull: ProjectDataFull[] = [
   {
     id: 2,
     img: ImgProjCard2,
-    title: "MS ECOMMERCE",
+    title: "MS E-COMMERCE",
     desc: "Loja virtual com categorias de produtos, filtros, detalhes e checkout.",
     icons: [FaReact, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
     demo: "#",
