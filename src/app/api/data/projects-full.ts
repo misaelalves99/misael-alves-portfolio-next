@@ -19,6 +19,7 @@ import ImgProjCard3 from "../../../../public/assets/img-projeto-card-03.png";
 import ImgProjCard4 from "../../../../public/assets/img-projeto-card-04.png";
 import ImgProjCard5 from "../../../../public/assets/img-projeto-card-05.png";
 import ImgProjCard6 from "../../../../public/assets/img-projeto-card-06.png";
+import ImgProjCard7 from "../../../../public/assets/img-projeto-card-07.png";
 
 import { ProjectDataFull } from "../../types/project-data-full";
 
@@ -36,6 +37,16 @@ export const cardProjectsFull: ProjectDataFull[] = [
   {
     id: 2,
     img: ImgProjCard2,
+    title: "MS ECOMMERCE",
+    desc: "Loja virtual com categorias de produtos, filtros, detalhes e checkout.",
+    icons: [FaReact, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
+    demo: "#",
+    github: "#",
+    category: "react"
+  },
+  {
+    id: 3,
+    img: ImgProjCard3,
     title: "FASHION SHOP",
     desc: "Um projeto pessoal com produtos de moda feminina, permitindo filtrar a sua categoria desejada.",
     icons: [FaReact, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
@@ -44,8 +55,8 @@ export const cardProjectsFull: ProjectDataFull[] = [
     category: "react"
   },
   {
-    id: 3,
-    img: ImgProjCard3,
+    id: 4,
+    img: ImgProjCard4,
     title: "E-COMMERCE SHOP",
     desc: "Loja virtual com categorias de produtos para filtrar e efetuar a compra.",
     icons: [FaReact, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
@@ -54,8 +65,8 @@ export const cardProjectsFull: ProjectDataFull[] = [
     category: "react"
   },
   {
-    id: 4,
-    img: ImgProjCard4,
+    id: 5,
+    img: ImgProjCard5,
     title: "MS PET",
     desc: "Proporciona o agendamento de uma visita para adoção de animais.",
     icons: [FaReact, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
@@ -64,8 +75,8 @@ export const cardProjectsFull: ProjectDataFull[] = [
     category: "react"
   },
   {
-    id: 5,
-    img: ImgProjCard5,
+    id: 6,
+    img: ImgProjCard6,
     title: "MS FOOD",
     desc: "Sistema de anotação de pedidos do cliente em restaurante.",
     icons: [FaReact, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
@@ -74,8 +85,8 @@ export const cardProjectsFull: ProjectDataFull[] = [
     category: "react"
   },
   {
-    id: 6,
-    img: ImgProjCard6,
+    id: 7,
+    img: ImgProjCard7,
     title: "MS NUTRI",
     desc: "Projeto de informações de alimentos nutritivos para saúde geral.",
     icons: [FaReact, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
@@ -84,7 +95,7 @@ export const cardProjectsFull: ProjectDataFull[] = [
     category: "react"
   },
   {
-    id: 7,
+    id: 8,
     img: ImgProjCard1,
     title: "PORTFÓLIO",
     desc: "Este é meu portfólio pessoal. Aqui, mostro minhas principais habilidades como desenvolvedor front-end.",
@@ -94,8 +105,18 @@ export const cardProjectsFull: ProjectDataFull[] = [
     category: "next"
   },
   {
-    id: 8,
+    id: 9,
     img: ImgProjCard2,
+    title: "MS ECOMMERCE",
+    desc: "Loja virtual com categorias de produtos, filtros, detalhes e checkout.",
+    icons: [SiNextdotjs, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
+    demo: "https://ms-ecommerce-next.vercel.app/",
+    github: "https://github.com/misaelalves99/ms-ecommerce-next",
+    category: "next"
+  },
+  {
+    id: 10,
+    img: ImgProjCard3,
     title: "FASHION SHOP",
     desc: "Um projeto pessoal com produtos de moda feminina, permitindo filtrar a sua categoria desejada.",
     icons: [SiNextdotjs, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
@@ -104,8 +125,8 @@ export const cardProjectsFull: ProjectDataFull[] = [
     category: "next"
   },
   {
-    id: 9,
-    img: ImgProjCard3,
+    id: 11,
+    img: ImgProjCard4,
     title: "E-COMMERCE SHOP",
     desc: "Loja virtual com categorias de produtos para filtrar e efetuar a compra.",
     icons: [SiNextdotjs, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
@@ -114,8 +135,8 @@ export const cardProjectsFull: ProjectDataFull[] = [
     category: "next"
   },
   {
-    id: 10,
-    img: ImgProjCard4,
+    id: 12,
+    img: ImgProjCard5,
     title: "MS PET",
     desc: "Proporciona o agendamento de uma visita para adoção de animais.",
     icons: [SiNextdotjs, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
@@ -124,8 +145,8 @@ export const cardProjectsFull: ProjectDataFull[] = [
     category: "next"
   },
   {
-    id: 11,
-    img: ImgProjCard5,
+    id: 13,
+    img: ImgProjCard6,
     title: "MS FOOD",
     desc: "Sistema de anotação de pedidos do cliente em restaurante.",
     icons: [SiNextdotjs, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
@@ -134,8 +155,8 @@ export const cardProjectsFull: ProjectDataFull[] = [
     category: "next"
   },
   {
-    id: 12,
-    img: ImgProjCard6,
+    id: 14,
+    img: ImgProjCard7,
     title: "MS NUTRI",
     desc: "Projeto de informações de alimentos nutritivos para saúde geral.",
     icons: [SiNextdotjs, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
@@ -144,7 +165,7 @@ export const cardProjectsFull: ProjectDataFull[] = [
     category: "next"
   },
   {
-    id: 13,
+    id: 15,
     img: ImgProjCard1,
     title: "PORTFÓLIO",
     desc: "Este é meu portfólio pessoal. Aqui, mostro minhas principais habilidades como desenvolvedor front-end.",
@@ -154,8 +175,18 @@ export const cardProjectsFull: ProjectDataFull[] = [
     category: "vue"
   },
   {
-    id: 14,
+    id: 16,
     img: ImgProjCard2,
+    title: "MS ECOMMERCE",
+    desc: "Loja virtual com categorias de produtos, filtros, detalhes e checkout.",
+    icons: [SiVuedotjs, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
+    demo: "#",
+    github: "#",
+    category: "vue"
+  },
+  {
+    id: 17,
+    img: ImgProjCard3,
     title: "FASHION SHOP",
     desc: "Um projeto pessoal com produtos de moda feminina, permitindo filtrar a sua categoria desejada.",
     icons: [SiVuedotjs, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
@@ -164,8 +195,8 @@ export const cardProjectsFull: ProjectDataFull[] = [
     category: "vue"
   },
   {
-    id: 15,
-    img: ImgProjCard3,
+    id: 18,
+    img: ImgProjCard4,
     title: "E-COMMERCE SHOP",
     desc: "Loja virtual com categorias de produtos para filtrar e efetuar a compra.",
     icons: [SiVuedotjs, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
@@ -174,8 +205,8 @@ export const cardProjectsFull: ProjectDataFull[] = [
     category: "vue"
   },
   {
-    id: 16,
-    img: ImgProjCard4,
+    id: 19,
+    img: ImgProjCard5,
     title: "MS PET",
     desc: "Proporciona o agendamento de uma visita para adoção de animais.",
     icons: [SiVuedotjs, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
@@ -184,8 +215,8 @@ export const cardProjectsFull: ProjectDataFull[] = [
     category: "vue"
   },
   {
-    id: 17,
-    img: ImgProjCard5,
+    id: 20,
+    img: ImgProjCard6,
     title: "MS FOOD",
     desc: "Sistema de anotação de pedidos do cliente em restaurante.",
     icons: [SiVuedotjs, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
@@ -194,8 +225,8 @@ export const cardProjectsFull: ProjectDataFull[] = [
     category: "vue"
   },
   {
-    id: 18,
-    img: ImgProjCard6,
+    id: 21,
+    img: ImgProjCard7,
     title: "MS NUTRI",
     desc: "Projeto de informações de alimentos nutritivos para saúde geral.",
     icons: [SiVuedotjs, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
