@@ -1,0 +1,45 @@
+.itemFormation {
+  background: linear-gradient(145deg, #1f1f1f, #292929);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.itemFormation:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(243, 0, 69, 0.5);
+}
+
+.containerItemFor {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.imgItemFor img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid rgb(243, 0, 69);
+}
+
+.infoItemFor h3 {
+  font-size: 1.4rem;
+  color: rgb(243, 0, 69);
+}
+
+.infoItemFor p {
+  font-size: 1rem;
+  color: #ddd;
+}
+
+@media (max-width: 768px) {
+  .educationTitle h1 {
+    font-size: 2.4rem;
+  }
+
+  .educationTitle h2 {
+    font-size: 1.8rem;
+  }
+}

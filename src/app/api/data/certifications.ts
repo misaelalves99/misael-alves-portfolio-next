@@ -1,3 +1,5 @@
+// app/api/data/certifications.ts
+
 export const cardCertification = [
   {
     id: 1,
@@ -24,3 +26,7 @@ export const cardCertification = [
     cert: "/assets/certificado4.pdf",
   },
 ];
+
+export async function getCertifications() {
+  return Promise.resolve(cardCertification);
+}

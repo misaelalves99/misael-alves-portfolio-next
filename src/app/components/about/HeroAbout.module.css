@@ -1,0 +1,111 @@
+.containerHeroAbout {
+  max-width: 1280px;
+  min-height: 60vh;
+  width: 100%;
+  margin: auto;
+  padding: 50px 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.aboutMe {
+  max-width: 400px;
+}
+
+.aboutMe h1 {
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.aboutMe h2 {
+  color: rgb(243, 0, 69);
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.contactSocial {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.homeProfile {
+  border-radius: 50%;
+  background-color: rgb(40, 40, 40);
+  border: 4px solid rgb(255, 0, 72);
+  overflow: hidden;
+  transition: background-color 0.3s, transform 0.3s;
+  width: 350px;
+  height: 350px;
+  box-shadow: 0 0 20px rgba(255, 0, 72, 0.6);
+}
+
+.homeProfile:hover {
+  background-color: rgb(255, 0, 72);
+  transform: scale(1.05);
+}
+
+.homeProfile img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1280px) {
+  .containerHeroAbout {
+    max-width: 1024px;
+  }
+}
+
+@media (max-width: 768px) {
+  .containerHeroAbout {
+    max-width: 576px;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+
+  .aboutMe {
+    margin-top: 30px;
+    text-align: center;
+  }
+}
+
+.socialMedia {
+  display: flex;
+  gap: 20px;
+  padding-top: 25px;
+  justify-content: center;
+}
+
+.socialMedia a {
+  width: 60px;
+  height: 60px;
+  background-color: #1f2937;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.8rem;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.socialMedia a:hover,
+.socialMedia a:focus {
+  background: linear-gradient(135deg, #ff0048, #ff6680);
+  color: white;
+  box-shadow: 0 6px 15px rgba(255, 0, 72, 0.7);
+  transform: scale(1.15);
+  border-color: #ff0048;
+  outline: none;
+}

@@ -1,0 +1,31 @@
+.itemCertifications {
+  background: linear-gradient(145deg, #1f1f1f, #292929);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.itemCertifications:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(243, 0, 69, 0.5);
+}
+
+.imgCertifications {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.imgCertifications img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.descriptionCertifications p {
+  font-size: 1rem;
+  color: #ddd;
+}

@@ -1,251 +1,36 @@
-/* About.module.css */
 .sectionAboutMe {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    box-sizing: border-box;
-    width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  width: 100%;
 }
 
-.containerHeroAbout {
-    max-width: 1280px;
-    min-height: 60vh;
-    width: 100%;
-    margin: auto;
-    padding: 50px 40px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-@media (max-width: 1280px) {
-    .containerHeroAbout {
-        max-width: 1024px;
-    }
-}
-
-@media (max-width: 768px) {
-    .containerHeroAbout {
-        max-width: 576px;
-        flex-wrap: wrap-reverse;
-        justify-content: center;
-    }
-    .aboutMe {
-        margin-top: 30px;
-        text-align: center;
-    }
-}
-
-.aboutMe {
-    max-width: 400px;
-}
-
-.aboutMe h1 {
-    color: white;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 700;
-    font-size: 2.5rem;
-}
-
-.aboutMe h2 {
-    color: rgb(243, 0, 69);
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 400;
-    font-size: 1.5rem;
-}
-
-.contactSocial {
-    max-width: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.homeProfile {
-    border-radius: 50%;
-    background-color: rgb(40, 40, 40);
-    border: 4px solid rgb(255, 0, 72); /* borda mais grossa */
-    overflow: hidden;
-    transition: background-color 0.3s, transform 0.3s;
-    width: 350px;  /* maior */
-    height: 350px; /* maior */
-    box-shadow: 0 0 20px rgb(255, 0, 72, 0.6);
-}
-
-.homeProfile:hover {
-    background-color: rgb(255, 0, 72);
-    transform: scale(1.05);
-}
-
-.homeProfile img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-
-.socialMedia {
-  display: flex;
-  gap: 20px;
-  padding-top: 25px;
-  justify-content: center; /* centraliza os ícones */
-}
-
-.socialMedia a {
-  width: 60px;
-  height: 60px;
-  background-color: #1f2937; /* cinza escuro tipo bg-gray-800 */
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 1.8rem;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
-  transition: all 0.3s ease;
-  border: 2px solid transparent;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.socialMedia a:hover,
-.socialMedia a:focus {
-  background: linear-gradient(135deg, #ff0048, #ff6680);
-  color: white;
-  box-shadow: 0 6px 15px rgba(255, 0, 72, 0.7);
-  transform: scale(1.15);
-  border-color: #ff0048;
-  outline: none;
-}
-
-/* EDUCAÇÃO */
 .education {
-    width: 100%;
-    background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgb(35, 35, 35) 56%);
+  width: 100%;
+  background: linear-gradient(45deg, rgba(0, 0, 0, 1) 0%, rgb(35, 35, 35) 56%);
 }
 
 .containerEducation {
-    max-width: 1280px;
-    margin: auto;
-    padding: 50px 20px;
-    color: #f1f1f1;
+  max-width: 1280px;
+  margin: auto;
+  padding: 50px 20px;
+  color: #f1f1f1;
 }
 
 .educationTitle {
-    text-align: center;
-    margin-bottom: 40px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .educationTitle h1 {
-    font-size: 2.8rem;
-    font-weight: 700;
-    color: white;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: white;
 }
 
 .educationTitle h2 {
-    font-size: 2rem;
-    font-weight: 400;
-    color: rgb(243, 0, 69);
-}
-
-.formationItems {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    margin-top: 40px;
-}
-
-.itemFormation {
-    background: linear-gradient(145deg, #1f1f1f, #292929);
-    border-radius: 15px;
-    padding: 20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.itemFormation:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 20px rgba(243, 0, 69, 0.5);
-}
-
-.containerItemFor {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.imgItemFor img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    border: 2px solid rgb(243, 0, 69);
-}
-
-.infoItemFor h3 {
-    font-size: 1.4rem;
-    color: rgb(243, 0, 69);
-}
-
-.infoItemFor p {
-    font-size: 1rem;
-    color: #ddd;
-}
-
-.certifications {
-    margin-top: 60px;
-    text-align: center;
-}
-
-.certificationsTitle h2 {
-    font-size: 2rem;
-    color: rgb(243, 0, 69);
-}
-
-.certificationsItems {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    margin-top: 40px;
-}
-
-.itemCertifications {
-    background: linear-gradient(145deg, #1f1f1f, #292929);
-    border-radius: 15px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.itemCertifications:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 20px rgba(243, 0, 69, 0.5);
-}
-
-.imgCertifications {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 30px;
-}
-
-.imgCertifications img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.descriptionCertifications p {
-    font-size: 1rem;
-    color: #ddd;
-}
-
-@media (max-width: 768px) {
-    .educationTitle h1 {
-        font-size: 2.4rem;
-    }
-
-    .educationTitle h2 {
-        font-size: 1.8rem;
-    }
+  font-size: 2rem;
+  font-weight: 400;
+  color: rgb(243, 0, 69);
 }

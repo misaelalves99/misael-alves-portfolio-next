@@ -1,0 +1,16 @@
+.certifications {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.certificationsTitle h2 {
+  font-size: 2rem;
+  color: rgb(243, 0, 69);
+}
+
+.certificationsItems {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
