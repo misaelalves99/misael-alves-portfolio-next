@@ -40,8 +40,8 @@ export const cardProjectsFull: ProjectDataFull[] = [
     title: "MS E-COMMERCE",
     desc: "Loja virtual com categorias de produtos, filtros, detalhes e checkout.",
     icons: [FaReact, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
-    demo: "#",
-    github: "#",
+    demo: "https://ms-ecommerce-react.vercel.app/",
+    github: "https://github.com/misaelalves99/ms-ecommerce-react",
     category: "react"
   },
   {
