@@ -24,7 +24,7 @@ export default function About() {
                 <h1>Sobre mim</h1>
                 <h2>
                 Olá, meu nome é Misael Alves, moro em Teófilo Otoni-MG. Sou
-                desenvolvedor front-end em React.js e sou formado no curso de
+                desenvolvedor front-end em React.js e Next.js e sou formado no curso de
                 Análise e Desenvolvimento de Sistemas.
                 </h2>
             </motion.div>
@@ -91,26 +91,26 @@ export default function About() {
                 </div>
 
                 <div className={styles.certifications}>
-                <div className={styles.certificationsTitle}>
-                    <h2>Certificações</h2>
-                </div>
+                    <div className={styles.certificationsTitle}>
+                        <h2>Certificações</h2>
+                    </div>
 
-                <div className={styles.certificationsItems}>
-                    {cardCertification.map((data) => (
-                    <Link href={data.cert} target="_blank" key={data.id}>
-                        <div className={styles.itemCertifications}>
-                        <div className={styles.containerItemCert}>
-                            <div className={styles.imgCertifications}>
-                            <Image src={data.imgcert} alt="Certificado" width={100} height={100} />
+                    <div className={styles.certificationsItems}>
+                        {cardCertification.map((data) => (
+                            <Link href={data.cert} target="_blank" rel="noopener noreferrer" key={data.id}>
+                            <div className={styles.itemCertifications}>
+                                <div className={styles.containerItemCert}>
+                                <div className={styles.imgCertifications}>
+                                    <Image src={data.imgcert} alt="Certificado" width={100} height={100} />
+                                </div>
+                                <div className={styles.descriptionCertifications}>
+                                    <p>{data.desc}</p>
+                                </div>
+                                </div>
                             </div>
-                            <div className={styles.descriptionCertifications}>
-                            <p>{data.desc}</p>
-                            </div>
-                        </div>
-                        </div>
-                    </Link>
-                    ))}
-                </div>
+                            </Link>
+                        ))}
+                    </div>
                 </div>
             </motion.div>
         </div>

@@ -6,13 +6,13 @@ import Image from "next/image";
 import styles from "./Skills.module.css";
 import ImgHab from "../../../public/assets/img-habilidades.png";
 import { FaHtml5, FaCss3Alt, FaReact, FaNpm, FaFigma } from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io5";
+import { SiJavascript } from "react-icons/si";
+import { SiTypescript } from "react-icons/si";
 import { RiTailwindCssLine } from "react-icons/ri";
-import { SiReactrouter } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 import { DiIllustrator } from "react-icons/di";
-import { BiLogoTypescript } from "react-icons/bi";
 import { SiNextdotjs } from "react-icons/si";
+import { FaVuejs } from "react-icons/fa";
 
 export default function Skills() {
   return (
@@ -35,16 +35,16 @@ export default function Skills() {
           </div>
           <div className={styles.languagesItems}>
             <div className={styles.itemLanguages}>
+              <SiJavascript className={styles.iconLanguages} />
+            </div>
+            <div className={styles.itemLanguages}>
+              <SiTypescript className={styles.iconLanguages} />
+            </div>
+            <div className={styles.itemLanguages}>
               <FaHtml5 className={styles.iconLanguages} />
             </div>
             <div className={styles.itemLanguages}>
               <FaCss3Alt className={styles.iconLanguages} />
-            </div>
-            <div className={styles.itemLanguages}>
-              <IoLogoJavascript className={styles.iconLanguages} />
-            </div>
-            <div className={styles.itemLanguages}>
-              <BiLogoTypescript className={styles.iconLanguages} />
             </div>
           </div>
         </div>
@@ -62,13 +62,13 @@ export default function Skills() {
               <SiNextdotjs className={styles.iconLibraries} />
             </div>
             <div className={styles.itemLibraries}>
+              <FaVuejs className={styles.iconLibraries} />
+            </div>
+            <div className={styles.itemLibraries}>
               <RiTailwindCssLine className={styles.iconLibraries} />
             </div>
             <div className={styles.itemLibraries}>
               <FaNpm className={styles.iconLibraries} />
-            </div>
-            <div className={styles.itemLibraries}>
-              <SiReactrouter className={styles.iconLibraries} />
             </div>
           </div>
         </div>

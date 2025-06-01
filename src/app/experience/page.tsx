@@ -13,8 +13,7 @@ export default function Experience() {
         <h1>Experiência</h1>
         <h2>
           Procuro por oportunidades para demonstrar o meu valor e desempenho.
-          Estou à disposição para vagas de estágio em Desenvolvimento Front-End
-          em React.js.
+          Estou à disposição para vagas de estágio em Desenvolvimento Front-End.
         </h2>
       </div>
       <div className={styles.experienceImg}>
