@@ -1,22 +1,21 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import styles from "./Projects.module.css";
 import { cardProjectsFull } from "../api/data/projects-full";
 import { cardProjectsAll } from "../api/data/projects-all";
 import ProjectCard from "../components/ProjectCardFull";
 import ProjectCardAll from "../components/ProjectCardAll";
-import { FaTasks } from "react-icons/fa";
+import ImgProj from "../../../public/assets/img-projetos.png";
 
 // Categorias disponíveis (sem "todos")
 const categories = ["react", "next", "vue"];
 
 export default function ProjectsPage() {
-  // Categoria padrão: "react"
   const [selectedCategoryComplete, setSelectedCategoryComplete] = useState("react");
   const [selectedCategorySpecific, setSelectedCategorySpecific] = useState("react");
 
-  // Filtragem sem "todos"
   const filteredCompleteProjects = cardProjectsFull.filter(
     (project) => project.category === selectedCategoryComplete
   );
@@ -33,8 +32,8 @@ export default function ProjectsPage() {
           <h1>Meus Projetos</h1>
           <h2>Explorando novas tecnologias e inovações.</h2>
         </div>
-        <div className={styles.projectsImg}>
-          <FaTasks className={styles.heroIcon} />
+        <div className={styles.experienceImg}>
+          <Image src={ImgProj} alt="Projetos" width={400} height={300} />
         </div>
       </div>
 
@@ -42,7 +41,6 @@ export default function ProjectsPage() {
       <div className={styles.sectionItemProjects}>
         <h3 className={styles.sectionTitle}>Projetos Completos</h3>
 
-        {/* Botões de Categoria para Projetos Completos */}
         <div className={styles.filterButtons}>
           {categories.map((cat) => (
             <button
@@ -70,7 +68,6 @@ export default function ProjectsPage() {
       <div className={styles.sectionItemProjects}>
         <h3 className={styles.sectionTitle}>Projetos Específicos</h3>
 
-        {/* Botões de Categoria para Projetos Específicos */}
         <div className={styles.filterButtons}>
           {categories.map((cat) => (
             <button
