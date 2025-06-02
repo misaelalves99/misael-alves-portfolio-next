@@ -1,0 +1,29 @@
+.filterButtons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.filterBtn {
+  background-color: #1f2937;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.filterBtn:hover {
+  background-color: #374151;
+}
+
+.active {
+  background: linear-gradient(135deg, #ff0048, #ff6680);
+  color: white;
+  border-color: #ff0048;
+  transform: scale(1.05);
+}

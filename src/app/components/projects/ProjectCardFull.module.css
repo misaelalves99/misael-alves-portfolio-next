@@ -1,0 +1,89 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #1a1a1a, #2b2b2b);
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(255, 0, 72, 0.2);
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(255, 0, 72, 0.4);
+}
+
+.imageWrapper {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.desc {
+  font-size: 1rem;
+  color: #cccccc;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.techIcons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.techIcon {
+  color: #ffffff;
+  background: #2a2a2a;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.techIcon:hover {
+  background: #ff006f;
+  transform: scale(1.2);
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  margin-top: auto;
+}
+
+.link {
+  background: #1f1f1f;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background 0.3s ease;
+}
+
+.link:hover {
+  background: #ff006f;
+}

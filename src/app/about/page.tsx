@@ -4,7 +4,7 @@
 
 import styles from "./About.module.css";
 import { motion } from "framer-motion";
-import HeroAbout from "../components/about/HeroAbout";
+import HeroAbout from "../components/about/AboutHero";
 import FormationList from "../components/about/FormationList";
 import CertificationList from "../components/about/CertificationList";
 

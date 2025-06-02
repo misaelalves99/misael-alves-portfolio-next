@@ -1,0 +1,27 @@
+.containerProjects {
+    max-width: 1280px;
+    width: 100%;
+    margin: auto;
+    padding: 0 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.projectsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+@media (max-width: 1024px) {
+    .projectsGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .projectsGrid {
+        grid-template-columns: 1fr;
+    }
+}

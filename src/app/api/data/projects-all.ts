@@ -1,24 +1,8 @@
 // app/data/projects-all.ts
 
-import {
-  FaShoppingCart,
-  FaCreditCard,
-  FaFilter,
-  FaUserLock,
-  FaHeart,
-  FaArrowCircleRight,
-  FaImages,
-  FaReact,
-  FaHtml5,
-  FaCss3Alt,
-  FaJsSquare
-} from "react-icons/fa";
+import { FaShoppingCart, FaCreditCard, FaFilter, FaUserLock, FaHeart, FaArrowCircleRight, FaImages, FaReact, FaHtml5, FaCss3Alt, FaJsSquare } from "react-icons/fa";
 
-import {
-  SiTypescript,
-  SiNextdotjs,
-  SiVuedotjs
-} from "react-icons/si";
+import { SiTypescript, SiNextdotjs, SiVuedotjs } from "react-icons/si";
 
 import { ProjectDataAll } from "../../types/project-data-all";
 import { IconType } from "react-icons";

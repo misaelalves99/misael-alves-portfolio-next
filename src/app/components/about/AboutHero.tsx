@@ -2,7 +2,7 @@
 
 "use client";
 
-import styles from "./HeroAbout.module.css";
+import styles from "./AboutHero.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";

@@ -1,6 +1,7 @@
 // types/project.ts
 
 import { StaticImageData } from "next/image";
+import { IconType } from "react-icons";
 
 export type Project = {
   id: number;
@@ -16,4 +17,6 @@ export type Project = {
   icon5?: React.ReactNode;
   iconbtn1?: React.ReactNode;
   iconbtn2?: React.ReactNode;
+  icons?: IconType[];
+  iconComponent?: IconType;
 };

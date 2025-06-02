@@ -1,0 +1,67 @@
+.containerHeroProjects {
+  max-width: 1280px;
+  min-height: 60vh;
+  width: 100%;
+  margin: 0 auto;
+  padding: 60px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.projects {
+  flex: 1;
+}
+
+.projects h1 {
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.projects h2 {
+  color: rgb(255, 0, 72);
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.projectsImg {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroIcon {
+  font-size: 5rem;
+  color: rgb(255, 255, 255);
+  background-color: rgba(207, 25, 25, 0.03);
+  padding: 1.2rem;
+  border-radius: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.heroIcon:hover {
+  transform: scale(1.1);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .containerHeroProjects {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .projects h1 {
+    font-size: 2.25rem;
+  }
+
+  .projects h2 {
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
+  }
+}
