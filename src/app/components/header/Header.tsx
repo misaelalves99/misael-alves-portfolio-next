@@ -1,11 +1,11 @@
-// src/components/Header.tsx
+// src/components/header/Header.tsx
 
 "use client";
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./Header.module.css";
-import Logo from "../../../public/assets/logo.png";
+import Logo from "../../../../public/assets/logo.png";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
