@@ -31,3 +31,30 @@
         text-align: center;
     }
 }
+
+.experience {
+    max-width: 400px;
+    width: 100%;
+}
+
+.experience h1 {
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.experience h2 {
+    color: rgb(255, 0, 72);
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.experienceImg {
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
