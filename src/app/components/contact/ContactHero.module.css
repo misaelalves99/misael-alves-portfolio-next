@@ -1,0 +1,58 @@
+.containerHeroContact {
+  max-width: 1280px;
+  width: 100%;
+  margin: auto;
+  padding: 50px 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 1280px) {
+  .containerHeroContact {
+    max-width: 1024px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .containerHeroContact {
+    max-width: 768px;
+  }
+}
+
+@media (max-width: 768px) {
+  .containerHeroContact {
+    max-width: 576px;
+    flex-direction: column-reverse;
+  }
+}
+
+.contact {
+  max-width: 400px;
+  width: 100%;
+}
+
+.contact h1 {
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.contact h2 {
+  color: rgb(255, 0, 72);
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.contactImg {
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

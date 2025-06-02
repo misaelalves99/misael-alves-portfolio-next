@@ -1,0 +1,14 @@
+.sectionContact {
+    width: 100%;
+    list-style: none;
+    box-sizing: border-box;
+    min-height: 100vh;
+    margin: auto;
+}
+
+.sectionContactForm {
+    width: 100%;
+    margin: auto;
+    padding: 50px 0;
+    background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgb(35, 35, 35) 56%);
+}
