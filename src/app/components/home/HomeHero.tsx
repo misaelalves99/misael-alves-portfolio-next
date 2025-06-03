@@ -1,4 +1,4 @@
-// src/components/home/HomeHero.tsx
+// app/components/home/HomeHero.tsx
 
 "use client";
 

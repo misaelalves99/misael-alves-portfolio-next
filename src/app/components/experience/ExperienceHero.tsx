@@ -1,4 +1,4 @@
-// src/components/experience/ExperienceHero.tsx
+// app/components/experience/ExperienceHero.tsx
 
 "use client";
 

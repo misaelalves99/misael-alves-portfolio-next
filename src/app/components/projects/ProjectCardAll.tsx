@@ -1,4 +1,4 @@
-// app/components/ProjectCardAll.tsx
+// app/components/projects/ProjectCardAll.tsx
 
 import Link from "next/link";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";

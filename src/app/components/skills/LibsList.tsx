@@ -1,7 +1,5 @@
 // app/components/skills/LibsList.tsx
 
-// app/components/skills/LibsList.tsx
-
 "use client";
 
 import { useEffect, useState } from "react";

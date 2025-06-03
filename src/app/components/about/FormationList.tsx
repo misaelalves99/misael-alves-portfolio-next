@@ -1,3 +1,5 @@
+// app/components/about/FormationList.tsx
+
 "use client";
 
 import { useEffect, useState } from "react";

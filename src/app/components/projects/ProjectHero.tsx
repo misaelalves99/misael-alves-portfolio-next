@@ -1,4 +1,4 @@
-// src/components/HeroProjects.tsx
+// app/components/projects/HeroProjects.tsx
 
 "use client";
 

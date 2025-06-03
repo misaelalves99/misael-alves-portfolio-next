@@ -1,3 +1,5 @@
+// app/components/projects/ProjectCardFull.tsx
+
 "use client";
 
 import Image, { StaticImageData } from "next/image";

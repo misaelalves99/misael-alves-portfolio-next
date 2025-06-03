@@ -1,11 +1,9 @@
-// src/app/projects/page.tsx
+// app/projects/page.tsx
 
 "use client";
 
 import { useState } from "react";
 import styles from "./ProjectsPage.module.css";
-import { cardProjectsFull } from "../api/data/projects-full";
-import { cardProjectsAll } from "../api/data/projects-all";
 import HeroProjects from "../components/projects/ProjectHero";
 import ProjectsFilterFull from "../components/projects/ProjectFilterFull";
 import ProjectsFilterAll from "../components/projects/ProjectFilterAll";
@@ -15,14 +13,6 @@ import ProjectListAll from "../components/projects/ProjectListAll";
 export default function ProjectsPage() {
   const [selectedCategoryComplete, setSelectedCategoryComplete] = useState("react");
   const [selectedCategorySpecific, setSelectedCategorySpecific] = useState("react");
-
-  const filteredCompleteProjects = cardProjectsFull.filter(
-    (project) => project.category === selectedCategoryComplete
-  );
-
-  const filteredSpecificProjects = cardProjectsAll.filter(
-    (project) => project.category === selectedCategorySpecific
-  );
 
   return (
     <section className={styles.sectionProjects}>
@@ -35,7 +25,7 @@ export default function ProjectsPage() {
           selected={selectedCategoryComplete}
           setSelected={setSelectedCategoryComplete}
         />
-        <ProjectListFull projects={filteredCompleteProjects} />
+        <ProjectListFull selectedCategory={selectedCategoryComplete} />
       </div>
 
       {/* Projetos Específicos */}
@@ -45,7 +35,7 @@ export default function ProjectsPage() {
           selected={selectedCategorySpecific}
           setSelected={setSelectedCategorySpecific}
         />
-        <ProjectListAll projects={filteredSpecificProjects} />
+        <ProjectListAll selectedCategory={selectedCategorySpecific} />
       </div>
     </section>
   );

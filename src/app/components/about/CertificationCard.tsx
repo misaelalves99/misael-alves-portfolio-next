@@ -1,3 +1,5 @@
+// app/components/about/CertificationCard.tsx
+
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./CertificationCard.module.css";

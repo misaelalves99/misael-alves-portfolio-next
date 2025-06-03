@@ -1,6 +1,7 @@
-// src/components/header/Header.tsx
+// app/components/header/Header.tsx
 
 "use client";
+
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";

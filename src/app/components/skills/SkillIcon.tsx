@@ -1,14 +1,12 @@
 // app/components/skills/SkillIcon.tsx
 
-// app/components/skills/SkillIcon.tsx
-
 import { ComponentType } from "react";
 
 interface SkillIconProps {
   icon: ComponentType<{ className?: string }>;
   label: string;
-  className?: string;         // classe do container (bolinha)
-  iconClassName?: string;     // classe aplicada ao ícone SVG
+  className?: string;
+  iconClassName?: string;
 }
 
 export default function SkillIcon({ icon: Icon, label, className, iconClassName }: SkillIconProps) {

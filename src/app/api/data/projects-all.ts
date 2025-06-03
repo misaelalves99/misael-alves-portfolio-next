@@ -1,4 +1,4 @@
-// app/data/projects-all.ts
+// app/api/data/projects-all.ts
 
 import { FaShoppingCart, FaCreditCard, FaFilter, FaUserLock, FaHeart, FaArrowCircleRight, FaImages, FaReact, FaHtml5, FaCss3Alt, FaJsSquare } from "react-icons/fa";
 
@@ -219,3 +219,8 @@ export const cardProjectsAll: (ProjectDataAll & { iconComponent: IconType })[] =
     category: "vue"
   },
 ];
+
+// função fake de API
+export async function getProjectsAll() {
+  return Promise.resolve(cardProjectsAll);
+}

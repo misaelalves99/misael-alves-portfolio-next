@@ -1,4 +1,4 @@
-// src/components/projects/ProjectsFilterFull.tsx
+// app/components/projects/ProjectsFilterFull.tsx
 
 "use client";
 

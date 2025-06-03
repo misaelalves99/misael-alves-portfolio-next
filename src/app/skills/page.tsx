@@ -1,4 +1,4 @@
-// src/skills/page.tsx
+// app/skills/page.tsx
 
 "use client";
 

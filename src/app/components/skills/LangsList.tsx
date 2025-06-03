@@ -1,7 +1,5 @@
 // app/components/skills/LangsList.tsx
 
-// app/components/skills/LangsList.tsx
-
 "use client";
 
 import { useEffect, useState } from "react";

@@ -1,4 +1,4 @@
-// src/components/MainContainer.tsx
+// app/components/main-container/MainContainer.tsx
 
 import { ReactNode } from "react";
 import styles from "./MainContainer.module.css";

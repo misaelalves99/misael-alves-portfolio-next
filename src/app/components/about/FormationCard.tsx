@@ -1,4 +1,4 @@
-// src/components/FormationCard.tsx
+// app/components/about/FormationCard.tsx
 
 import Image from "next/image";
 import styles from "./FormationCard.module.css";

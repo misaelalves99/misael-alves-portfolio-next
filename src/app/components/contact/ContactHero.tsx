@@ -1,4 +1,4 @@
-// src/app/contact/components/ContactHero.tsx
+// app/components/contact/ContactHero.tsx
 
 "use client";
 

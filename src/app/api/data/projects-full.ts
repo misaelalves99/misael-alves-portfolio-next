@@ -1,17 +1,7 @@
-// app/data/cardProjects.ts
+// app/api/data/projects-full.ts
 
-import {
-  FaReact,
-  FaHtml5,
-  FaCss3Alt,
-  FaJsSquare
-} from "react-icons/fa";
-
-import {
-  SiTypescript,
-  SiNextdotjs,
-  SiVuedotjs
-} from "react-icons/si";
+import { FaReact, FaHtml5, FaCss3Alt, FaJsSquare } from "react-icons/fa";
+import { SiTypescript, SiNextdotjs, SiVuedotjs } from "react-icons/si";
 
 import ImgProjCard1 from "../../../../public/assets/img-projeto-card-01.png";
 import ImgProjCard2 from "../../../../public/assets/img-projeto-card-02.png";
@@ -235,3 +225,8 @@ export const cardProjectsFull: ProjectDataFull[] = [
     category: "vue"
   },
 ];
+
+// função fake de API
+export async function getProjectsFull() {
+  return Promise.resolve(cardProjectsFull);
+}
