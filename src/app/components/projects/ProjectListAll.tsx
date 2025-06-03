@@ -3,21 +3,10 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { IconType } from "react-icons";
 import ProjectCardAll from "./ProjectCardAll";
 import styles from "./ProjectListAll.module.css";
 import { getProjectsAll } from "@/app/api/data/projects-all";
-
-type ProjectWithIcons = {
-  id: number;
-  title: string;
-  desc: string;
-  icons: IconType[];
-  demo: string;
-  github: string;
-  iconComponent: IconType;
-  category: string;
-};
+import type { ProjectWithIcons } from "@/app/types/project";
 
 interface ProjectListAllProps {
   selectedCategory: string;
@@ -31,7 +20,7 @@ export default function ProjectListAll({ selectedCategory }: ProjectListAllProps
       const data = await getProjectsAll();
       setProjectsData(data);
     };
-    
+
     fetchProjects();
   }, []);
 

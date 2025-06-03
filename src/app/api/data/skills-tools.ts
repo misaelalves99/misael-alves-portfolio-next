@@ -18,9 +18,9 @@ export const skillsTools = [
   },
 ];
 
-// Simulação de uma API fetch
+// Função Fake de API
 export async function getSkillsTools() {
   return new Promise<typeof skillsTools>((resolve) => {
-    setTimeout(() => resolve(skillsTools), 300); // delay simulado
+    setTimeout(() => resolve(skillsTools), 300); // simula delay
   });
 }

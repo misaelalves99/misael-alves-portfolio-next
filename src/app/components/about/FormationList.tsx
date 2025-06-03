@@ -5,7 +5,8 @@
 import { useEffect, useState } from "react";
 import styles from "./FormationList.module.css";
 import { getFormations } from "../../api/data/formations";
-import FormationCard, { Formation } from "./FormationCard";
+import FormationCard from "./FormationCard";
+import type { Formation } from "@/app/types/formation";
 
 export default function FormationList() {
   const [formations, setFormations] = useState<Formation[]>([]);

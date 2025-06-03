@@ -2,15 +2,7 @@
 
 import Image from "next/image";
 import styles from "./FormationCard.module.css";
-
-export interface Formation {
-  id: number;
-  img: string;
-  title: string;
-  curso?: string;
-  instituicao: string;
-  periodo: string;
-}
+import type { Formation } from "@/app/types/formation";
 
 export default function FormationCard({ formation }: { formation: Formation }) {
   return (

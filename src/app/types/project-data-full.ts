@@ -1,4 +1,4 @@
-// types/project-data-Full.ts
+// app/types/project-data-full.ts
 import { StaticImageData } from "next/image";
 import { IconType } from "react-icons";
 

@@ -220,7 +220,7 @@ export const cardProjectsAll: (ProjectDataAll & { iconComponent: IconType })[] =
   },
 ];
 
-// função fake de API
+// Função Fake de API
 export async function getProjectsAll() {
   return Promise.resolve(cardProjectsAll);
 }

@@ -6,11 +6,7 @@ import { useEffect, useState } from "react";
 import { getSkillsLibs } from "@/app/api/data/skills-libs";
 import SkillIcon from "./SkillIcon";
 import styles from "./LibsList.module.css";
-
-type SkillItem = {
-  icon: React.ComponentType<{ className?: string }>;
-  label: string;
-};
+import type { SkillItem } from "@/app/types/skills";
 
 export default function LibsList() {
   const [libs, setLibs] = useState<SkillItem[]>([]);

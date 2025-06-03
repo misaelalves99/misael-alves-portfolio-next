@@ -3,21 +3,9 @@
 import Link from "next/link";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import styles from "./ProjectCardAll.module.css";
-import { IconType } from "react-icons";
+import { ProjectAll } from "@/app/types/project";
 
-type ProjectCardAllProps = {
-  project: {
-    id: number;
-    title: string;
-    desc: string;
-    icons: IconType[];
-    demo: string;
-    github: string;
-    iconComponent: IconType;
-  };
-};
-
-export default function ProjectCardAll({ project }: ProjectCardAllProps) {
+export default function ProjectCardAll({ project }: { project: ProjectAll }) {
   const IconMain = project.iconComponent;
 
   return (

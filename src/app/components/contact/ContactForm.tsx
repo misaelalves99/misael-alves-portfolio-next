@@ -4,12 +4,7 @@
 
 import { useState } from "react";
 import styles from "./ContactForm.module.css";
-
-interface FormData {
-  name: string;
-  email: string;
-  message: string;
-}
+import { FormData } from "@/app/types/form-data";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState<FormData>({

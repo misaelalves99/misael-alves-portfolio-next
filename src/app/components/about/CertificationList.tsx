@@ -5,7 +5,8 @@
 import { useEffect, useState } from "react";
 import styles from "./CertificationList.module.css";
 import { getCertifications } from "../../api/data/certifications";
-import CertificationCard, { Certification } from "./CertificationCard";
+import CertificationCard from "./CertificationCard";
+import type { Certification } from "@/app/types/certification"; // <-- CORRETO: importar o tipo da pasta types
 
 export default function CertificationList() {
   const [certifications, setCertifications] = useState<Certification[]>([]);

@@ -27,6 +27,7 @@ export const cardCertification = [
   },
 ];
 
+// Função Fake de API
 export async function getCertifications() {
   return Promise.resolve(cardCertification);
 }

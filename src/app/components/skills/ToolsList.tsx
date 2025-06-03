@@ -6,11 +6,7 @@ import { useEffect, useState } from "react";
 import { getSkillsTools } from "@/app/api/data/skills-tools";
 import SkillIcon from "./SkillIcon";
 import styles from "./ToolsList.module.css";
-
-type SkillItem = {
-  icon: React.ComponentType<{ className?: string }>;
-  label: string;
-};
+import type { SkillItem } from "@/app/types/skills";
 
 export default function ToolsList() {
   const [tools, setTools] = useState<SkillItem[]>([]);

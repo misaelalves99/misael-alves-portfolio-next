@@ -16,7 +16,7 @@ export const cardFormation = [
   },
 ];
 
-// Função que simula um GET (fetch)
+// Função Fake de API
 export async function getFormations() {
   return Promise.resolve(cardFormation);
 }

@@ -3,13 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./CertificationCard.module.css";
-
-export interface Certification {
-  id: number;
-  imgcert: string;
-  desc: string;
-  cert: string;
-}
+import type { Certification } from "@/app/types/certification"; // importar tipo aqui
 
 export default function CertificationCard({ cert }: { cert: Certification }) {
   return (
@@ -17,7 +11,6 @@ export default function CertificationCard({ cert }: { cert: Certification }) {
       href={cert.cert}
       target="_blank"
       rel="noopener noreferrer"
-      key={cert.id}
     >
       <div className={styles.itemCertifications}>
         <div className={styles.containerItemCert}>

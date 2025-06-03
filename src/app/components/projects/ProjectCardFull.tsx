@@ -2,22 +2,14 @@
 
 "use client";
 
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import styles from "./ProjectCardFull.module.css";
-import { IconType } from "react-icons";
+import type { ProjectFull } from "@/app/types/project";
 
 type ProjectCardFullProps = {
-  project: {
-    id: number;
-    title: string;
-    desc: string;
-    img: string | StaticImageData;
-    icons: IconType[];
-    demo: string;
-    github: string;
-  };
+  project: ProjectFull;
 };
 
 export default function ProjectCard({ project }: ProjectCardFullProps) {

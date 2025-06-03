@@ -226,7 +226,7 @@ export const cardProjectsFull: ProjectDataFull[] = [
   },
 ];
 
-// função fake de API
+// Função Fake de API
 export async function getProjectsFull() {
   return Promise.resolve(cardProjectsFull);
 }

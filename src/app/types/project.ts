@@ -1,4 +1,4 @@
-// types/project.ts
+// app/types/project.ts
 
 import { StaticImageData } from "next/image";
 import { IconType } from "react-icons";
@@ -20,3 +20,26 @@ export type Project = {
   icons?: IconType[];
   iconComponent?: IconType;
 };
+
+export interface ProjectAll {
+  id: number;
+  title: string;
+  desc: string;
+  icons: IconType[];
+  demo: string;
+  github: string;
+  iconComponent: IconType;
+}
+export interface ProjectFull {
+  id: number;
+  title: string;
+  desc: string;
+  img: string | StaticImageData;
+  icons: IconType[];
+  demo: string;
+  github: string;
+}
+
+export interface ProjectWithIcons extends ProjectAll {
+  category: string;
+}
