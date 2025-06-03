@@ -1,0 +1,15 @@
+.sectionSkills {
+    width: 100%;
+    list-style: none;
+    box-sizing: border-box;
+    min-height: 100vh;
+    margin: auto;
+}
+
+.sectionLanguages {
+    width: 100%;
+    box-sizing: border-box;
+    margin: auto;
+    padding-bottom: 50px;
+    background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgb(35, 35, 35) 56%);
+}
