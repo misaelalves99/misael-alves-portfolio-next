@@ -25,6 +25,12 @@ export const cardCertification = [
     desc: "Programação Para Dispositivos Móveis",
     cert: "/assets/certificado4.pdf",
   },
+  {
+    id: 5,
+    imgcert: "/assets/img-certificado5.png",
+    desc: "React do Zero a Maestria",
+    cert: "/assets/certificado5.pdf",
+  },
 ];
 
 // Função Fake de API

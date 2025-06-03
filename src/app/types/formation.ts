@@ -7,4 +7,5 @@ export interface Formation {
   curso?: string;
   instituicao: string;
   periodo: string;
+  dipl: string;
 }

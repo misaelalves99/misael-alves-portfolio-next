@@ -1,3 +1,9 @@
+.linkWrapper {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
 .itemFormation {
   background: linear-gradient(145deg, #1f1f1f, #292929);
   border-radius: 15px;
