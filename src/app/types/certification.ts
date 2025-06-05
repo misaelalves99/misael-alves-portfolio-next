@@ -5,4 +5,5 @@ export interface Certification {
   imgcert: string;
   desc: string;
   cert: string;
+  category: string;
 }
