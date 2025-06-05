@@ -97,7 +97,7 @@ export const cardProjectsFull: ProjectDataFull[] = [
   {
     id: 9,
     img: ImgProjCard2,
-    title: "MS ECOMMERCE",
+    title: "MS E-COMMERCE",
     desc: "Loja virtual com categorias de produtos, filtros, detalhes e checkout.",
     icons: [SiNextdotjs, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
     demo: "https://ms-ecommerce-next.vercel.app/",
@@ -167,7 +167,7 @@ export const cardProjectsFull: ProjectDataFull[] = [
   {
     id: 16,
     img: ImgProjCard2,
-    title: "MS ECOMMERCE",
+    title: "MS E-COMMERCE",
     desc: "Loja virtual com categorias de produtos, filtros, detalhes e checkout.",
     icons: [SiVuedotjs, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
     demo: "#",
