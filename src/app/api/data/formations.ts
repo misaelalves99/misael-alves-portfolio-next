@@ -1,8 +1,17 @@
 // app/api/data/formations.ts
 
 export const cardFormation = [
-  {
+    {
     id: 1,
+    img: "/assets/img-card.png",
+    title: "GRADUANDO",
+    curso: "Sistemas de Informação",
+    instituicao: "Universidade Presidente Antônio Carlos - UNIPAC",
+    periodo: "Início: 28/07/2025 - Atual: 1º período",
+    dipl: "/",
+  },
+  {
+    id: 2,
     img: "/assets/img-card.png",
     title: "GRADUAÇÃO SUPERIOR COMPLETO",
     curso: "Análise e Desenvolvimento de Sistemas",
@@ -11,7 +20,7 @@ export const cardFormation = [
     dipl: "/assets/diploma-ads-misael.pdf",
   },
   {
-    id: 2,
+    id: 3,
     img: "/assets/img-card.png",
     title: "ENSINO MÉDIO COMPLETO",
     instituicao: "E.E. José Expedito Souza Campos",

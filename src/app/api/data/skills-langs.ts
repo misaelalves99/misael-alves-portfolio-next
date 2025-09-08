@@ -1,6 +1,7 @@
 // src/app/api/data/skills-langs.ts
 import { FaHtml5, FaCss3Alt } from "react-icons/fa";
 import { SiJavascript, SiTypescript } from "react-icons/si";
+import { TbBrandCSharp } from "react-icons/tb";
 
 export const skillsLangs = [
   { 
@@ -10,6 +11,10 @@ export const skillsLangs = [
   { 
     icon: SiTypescript, 
     label: "TypeScript" 
+  },
+  { 
+    icon: TbBrandCSharp, 
+    label: "C#" 
   },
   { 
     icon: FaHtml5, 

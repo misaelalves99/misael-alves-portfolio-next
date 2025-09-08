@@ -21,8 +21,8 @@ export default function HeroAbout() {
       >
         <h1>Sobre mim</h1>
         <h2>
-          Olá, meu nome é Misael Alves, moro em Teófilo Otoni-MG. Sou
-          desenvolvedor front-end em React.js e Next.js e sou formado no curso de
+          Olá, meu nome é Misael Alves. Sou
+          desenvolvedor front-end em React.js, Next.js, Angular e ASP.NET e formado no curso de
           Análise e Desenvolvimento de Sistemas.
         </h2>
       </motion.div>

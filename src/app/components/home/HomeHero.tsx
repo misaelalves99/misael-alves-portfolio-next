@@ -22,7 +22,7 @@ export default function HomeHero() {
         <h2 className={styles.typical}>
           <Typical
             loop={Infinity}
-            steps={['React.js', 3000, 'Next.js', 3000, 'Vue.js', 3000, 'Tailwind CSS', 3000]}
+            steps={['React.js', 3000, 'Next.js', 3000, 'Angular', 3000, 'ASP.NET', 3000, 'Vue.js', 3000, 'Tailwind CSS', 3000]}
           />
         </h2>
         <br />

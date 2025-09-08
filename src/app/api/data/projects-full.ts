@@ -1,9 +1,10 @@
 // app/api/data/projects-full.ts
 
 import { FaReact, FaHtml5, FaCss3Alt, FaJsSquare, FaAngular } from "react-icons/fa";
-import { SiTypescript, SiNextdotjs, SiVuedotjs } from "react-icons/si";
+import { SiTypescript, SiNextdotjs, SiVuedotjs, SiTestinglibrary, SiJest, SiJasmine, SiDotnet } from "react-icons/si";
 import { RiNextjsLine } from "react-icons/ri";
 import { TbBrandCSharp } from "react-icons/tb";
+import { AiOutlineExperiment } from "react-icons/ai";
 
 import ImgProjCard1 from "../../../../public/assets/img-projeto-card-01.png";
 import ImgProjCard2 from "../../../../public/assets/img-projeto-card-02.png";
@@ -25,7 +26,7 @@ export const cardProjectsFull: ProjectDataFull[] = [
     img: ImgProjCard8,
     title: "EMPLOYEE REGISTRATION",
     desc: "Aplicação com CRUD completo para registro, edição e gerenciamento completo de funcionários.",
-    icons: [FaReact, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
+    icons: [FaReact, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt, SiTestinglibrary, SiJest],
     demo: "https://employee-registration-react-seven.vercel.app/",
     github: "https://github.com/misaelalves99/employee-registration-react",
     category: "react"
@@ -35,7 +36,7 @@ export const cardProjectsFull: ProjectDataFull[] = [
     img: ImgProjCard9,
     title: "ECOMMERCE STORE",
     desc: "Aplicação com CRUD completo para registro, edição e gerenciamento completo de loja virtual",
-    icons: [FaReact, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
+    icons: [FaReact, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt, SiTestinglibrary, SiJest],
     demo: "https://ecommerce-store-react-seven.vercel.app/",
     github: "https://github.com/misaelalves99/ecommerce-store-react",
     category: "react"
@@ -45,7 +46,7 @@ export const cardProjectsFull: ProjectDataFull[] = [
     img: ImgProjCard10,
     title: "SCHOOL MANAGEMENT",
     desc: "Aplicação com CRUD completo para registro, edição e gerenciamento completo de gestão escolar",
-    icons: [FaReact, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
+    icons: [FaReact, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt, SiTestinglibrary, SiJest],
     demo: "https://school-management-react-one.vercel.app/",
     github: "https://github.com/misaelalves99/school-management-react",
     category: "react"
@@ -55,7 +56,7 @@ export const cardProjectsFull: ProjectDataFull[] = [
     img: ImgProjCard11,
     title: "MEDICAL APPOINTMENT MANAGEMENT",
     desc: "Aplicação com CRUD completo para registro, edição e gerenciamento completo de gestão de consulta médica",
-    icons: [FaReact, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
+    icons: [FaReact, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt, SiTestinglibrary, SiJest],
     demo: "https://medical-appointment-system-react.vercel.app/",
     github: "https://github.com/misaelalves99/medical-appointment-system-react",
     category: "react"
@@ -135,7 +136,7 @@ export const cardProjectsFull: ProjectDataFull[] = [
     img: ImgProjCard8,
     title: "EMPLOYEE REGISTRATION",
     desc: "Aplicação com CRUD completo para registro, edição e gerenciamento completo de funcionários",
-    icons: [RiNextjsLine, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
+    icons: [RiNextjsLine, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt, SiTestinglibrary, SiJest],
     demo: "https://employee-registration-next-tan.vercel.app/",
     github: "https://github.com/misaelalves99/employee-registration-next",
     category: "next"
@@ -145,7 +146,7 @@ export const cardProjectsFull: ProjectDataFull[] = [
     img: ImgProjCard9,
     title: "ECOMMERCE STORE",
     desc: "Aplicação com CRUD completo para registro, edição e gerenciamento completo de loja virtual",
-    icons: [RiNextjsLine, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
+    icons: [RiNextjsLine, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt, SiTestinglibrary, SiJest],
     demo: "https://ecommerce-store-next-eta.vercel.app/",
     github: "https://github.com/misaelalves99/ecommerce-store-next",
     category: "next"
@@ -155,7 +156,7 @@ export const cardProjectsFull: ProjectDataFull[] = [
     img: ImgProjCard10,
     title: "SCHOOL MANAGEMENT",
     desc: "Aplicação com CRUD completo para registro, edição e gerenciamento completo de gestão escolar",
-    icons: [RiNextjsLine, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
+    icons: [RiNextjsLine, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt, SiTestinglibrary, SiJest],
     demo: "https://school-management-next-seven.vercel.app/",
     github: "https://github.com/misaelalves99/school-management-next",
     category: "next"
@@ -165,7 +166,7 @@ export const cardProjectsFull: ProjectDataFull[] = [
     img: ImgProjCard11,
     title: "MEDICAL APPOINTMENT MANAGEMENT",
     desc: "Aplicação com CRUD completo para registro, edição e gerenciamento completo de gestão de consulta médica",
-    icons: [RiNextjsLine, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
+    icons: [RiNextjsLine, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt, SiTestinglibrary, SiJest],
     demo: "https://medical-appointment-system-next.vercel.app/",
     github: "https://github.com/misaelalves99/medical-appointment-system-next",
     category: "next"
@@ -315,7 +316,7 @@ export const cardProjectsFull: ProjectDataFull[] = [
     img: ImgProjCard8,
     title: "EMPLOYEE REGISTRATION",
     desc: "Aplicação com CRUD completo para registro, edição e gerenciamento completo de funcionários",
-    icons: [FaAngular, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
+    icons: [FaAngular, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt, SiTestinglibrary, AiOutlineExperiment, SiJasmine],
     demo: "https://employee-registration-angular.vercel.app/",
     github: "https://github.com/misaelalves99/employee-registration-angular",
     category: "angular"
@@ -325,7 +326,7 @@ export const cardProjectsFull: ProjectDataFull[] = [
     img: ImgProjCard9,
     title: "ECOMMERCE STORE",
     desc: "Aplicação com CRUD completo para registro, edição e gerenciamento completo de loja virtual",
-    icons: [FaAngular, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
+    icons: [FaAngular, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt, SiTestinglibrary, AiOutlineExperiment, SiJasmine],
     demo: "https://ecommerce-store-angular-one.vercel.app/",
     github: "https://github.com/misaelalves99/ecommerce-store-angular",
     category: "angular"
@@ -335,7 +336,7 @@ export const cardProjectsFull: ProjectDataFull[] = [
     img: ImgProjCard10,
     title: "SCHOOL MANAGEMENT",
     desc: "Aplicação com CRUD completo para registro, edição e gerenciamento completo de gestão escolar",
-    icons: [FaAngular, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
+    icons: [FaAngular, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt, SiTestinglibrary, AiOutlineExperiment, SiJasmine],
     demo: "https://school-management-angular.vercel.app/",
     github: "https://github.com/misaelalves99/school-management-angular",
     category: "angular"
@@ -345,7 +346,7 @@ export const cardProjectsFull: ProjectDataFull[] = [
     img: ImgProjCard11,
     title: "MEDICAL APPOINTMENT MANAGEMENT",
     desc: "Aplicação com CRUD completo para registro, edição e gerenciamento completo de gestão de consulta médica",
-    icons: [FaAngular, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
+    icons: [FaAngular, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt, SiTestinglibrary, SiJasmine, AiOutlineExperiment],
     demo: "https://medical-appointment-system-angular.vercel.app/",
     github: "https://github.com/misaelalves99/medical-appointment-system-angular",
     category: "angular"
@@ -355,7 +356,7 @@ export const cardProjectsFull: ProjectDataFull[] = [
     img: ImgProjCard8,
     title: "EMPLOYEE REGISTRATION",
     desc: "Aplicação com CRUD completo para registro, edição e gerenciamento completo de funcionários",
-    icons: [TbBrandCSharp, FaHtml5, FaCss3Alt],
+    icons: [SiDotnet, TbBrandCSharp, FaHtml5, FaCss3Alt],
     demo: "#",
     github: "https://github.com/misaelalves99/employee-registration-asp.net",
     category: "asp.net"
@@ -365,7 +366,7 @@ export const cardProjectsFull: ProjectDataFull[] = [
     img: ImgProjCard9,
     title: "ECOMMERCE STORE",
     desc: "Aplicação com CRUD completo para registro, edição e gerenciamento completo de loja virtual",
-    icons: [TbBrandCSharp, FaHtml5, FaCss3Alt],
+    icons: [SiDotnet, TbBrandCSharp, FaHtml5, FaCss3Alt],
     demo: "#",
     github: "https://github.com/misaelalves99/ecommerce-store-asp.net",
     category: "asp.net"
@@ -375,7 +376,7 @@ export const cardProjectsFull: ProjectDataFull[] = [
     img: ImgProjCard10,
     title: "SCHOOL MANAGEMENT",
     desc: "Aplicação com CRUD completo para registro, edição e gerenciamento completo de gestão escolar",
-    icons: [TbBrandCSharp, FaHtml5, FaCss3Alt],
+    icons: [SiDotnet, TbBrandCSharp, FaHtml5, FaCss3Alt],
     demo: "#",
     github: "https://github.com/misaelalves99/school-management-asp.net",
     category: "asp.net"
@@ -385,7 +386,7 @@ export const cardProjectsFull: ProjectDataFull[] = [
     img: ImgProjCard11,
     title: "MEDICAL APPOINTMENT MANAGEMENT",
     desc: "Aplicação com CRUD completo para registro, edição e gerenciamento completo de gestão de consulta médica",
-    icons: [TbBrandCSharp, FaHtml5, FaCss3Alt],
+    icons: [SiDotnet, TbBrandCSharp, FaHtml5, FaCss3Alt],
     demo: "#",
     github: "https://github.com/misaelalves99/medical-appointment-system-asp.net",
     category: "asp.net"
