@@ -1,6 +1,6 @@
 // src/app/api/data/skills-libs.ts
 
-import { FaReact, FaNpm, FaVuejs } from "react-icons/fa";
+import { FaReact, FaNpm, FaVuejs, FaLaravel } from "react-icons/fa";
 import { SiNextdotjs, SiAngular, SiTestinglibrary, SiJest, SiJasmine, SiDotnet } from "react-icons/si";
 import { RiTailwindCssLine } from "react-icons/ri";
 import { AiOutlineExperiment } from "react-icons/ai";
@@ -24,6 +24,10 @@ export const skillsLibs = [
   { 
     icon: SiDotnet, 
     label: "ASP.NET" 
+  },
+  { 
+    icon: FaLaravel, 
+    label: "Laravel" 
   },
   { 
     icon: SiTestinglibrary, 
