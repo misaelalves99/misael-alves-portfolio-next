@@ -1,6 +1,6 @@
 // app/api/data/projects-full.ts
 
-import { FaReact, FaHtml5, FaCss3Alt, FaJsSquare, FaAngular } from "react-icons/fa";
+import { FaReact, FaHtml5, FaCss3Alt, FaJsSquare, FaAngular, FaLaravel, FaPhp, FaDocker } from "react-icons/fa";
 import { SiTypescript, SiNextdotjs, SiVuedotjs, SiTestinglibrary, SiJest, SiJasmine, SiDotnet } from "react-icons/si";
 import { RiNextjsLine } from "react-icons/ri";
 import { TbBrandCSharp } from "react-icons/tb";
@@ -390,6 +390,46 @@ export const cardProjectsFull: ProjectDataFull[] = [
     demo: "#",
     github: "https://github.com/misaelalves99/medical-appointment-system-asp.net",
     category: "asp.net"
+  },
+  {
+    id: 38,
+    img: ImgProjCard8,
+    title: "EMPLOYEE REGISTRATION",
+    desc: "Aplicação com CRUD completo para registro, edição e gerenciamento completo de funcionários",
+    icons: [FaLaravel, FaPhp, FaHtml5, FaCss3Alt],
+    demo: "#",
+    github: "https://github.com/misaelalves99/employee-registration-laravel",
+    category: "laravel"
+  },
+  {
+    id: 39,
+    img: ImgProjCard9,
+    title: "ECOMMERCE STORE",
+    desc: "Aplicação com CRUD completo para registro, edição e gerenciamento completo de loja virtual",
+    icons: [FaLaravel, FaPhp, FaHtml5, FaCss3Alt],
+    demo: "#",
+    github: "https://github.com/misaelalves99/ecommerce-store-laravel",
+    category: "laravel"
+  },
+  {
+    id: 40,
+    img: ImgProjCard10,
+    title: "SCHOOL MANAGEMENT",
+    desc: "Aplicação com CRUD completo para registro, edição e gerenciamento completo de gestão escolar",
+    icons: [FaLaravel, FaPhp, FaDocker, FaHtml5, FaCss3Alt],
+    demo: "#",
+    github: "https://github.com/misaelalves99/school-management-laravel",
+    category: "laravel"
+  },
+  {
+    id: 41,
+    img: ImgProjCard11,
+    title: "MEDICAL APPOINTMENT MANAGEMENT",
+    desc: "Aplicação com CRUD completo para registro, edição e gerenciamento completo de gestão de consulta médica",
+    icons: [FaLaravel, FaPhp, FaHtml5, FaCss3Alt],
+    demo: "#",
+    github: "https://github.com/misaelalves99/medical-appointment-system-laravel",
+    category: "laravel"
   },
 ];
 

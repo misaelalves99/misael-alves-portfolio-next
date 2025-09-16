@@ -10,7 +10,7 @@ interface ProjectsFilterFullProps {
   setSelected: Dispatch<SetStateAction<string>>;
 }
 
-const categories = ["react", "next", "angular", "asp.net"];
+const categories = ["react", "next", "angular", "asp.net", "laravel"];
 
 export default function ProjectsFilterFull({ selected, setSelected }: ProjectsFilterFullProps) {
   return (
