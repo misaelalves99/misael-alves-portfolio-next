@@ -17,6 +17,7 @@ import ImgProjCard8 from "../../../../public/assets/img-projeto-card-08.png";
 import ImgProjCard9 from "../../../../public/assets/img-projeto-card-09.png";
 import ImgProjCard10 from "../../../../public/assets/img-projeto-card-10.png";
 import ImgProjCard11 from "../../../../public/assets/img-projeto-card-11.png";
+import ImgProjCard12 from "../../../../public/assets/img-projeto-card-12.png";
 
 import { ProjectDataFull } from "../../types/project-data-full";
 
@@ -243,6 +244,16 @@ export const cardProjectsFull: ProjectDataFull[] = [
   },
   {
     id: 23,
+    img: ImgProjCard12,
+    title: "PATIENT RECORD",
+    desc: "Aplicação com CRUD completo para registro, edição e gerenciamento completo de gestão de pacientes e consulta médica",
+    icons: [RiNextjsLine, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
+    demo: "https://patient-record-next.vercel.app/",
+    github: "https://github.com/misaelalves99/patient-record-next",
+    category: "next"
+  },
+  {
+    id: 24,
     img: ImgProjCard1,
     title: "PORTFÓLIO",
     desc: "Este é meu portfólio pessoal. Aqui, mostro minhas principais habilidades como desenvolvedor front-end.",
@@ -252,7 +263,7 @@ export const cardProjectsFull: ProjectDataFull[] = [
     category: "vue"
   },
   {
-    id: 24,
+    id: 25,
     img: ImgProjCard2,
     title: "MS E-COMMERCE",
     desc: "Loja virtual com categorias de produtos, filtros, detalhes e checkout.",
@@ -262,7 +273,7 @@ export const cardProjectsFull: ProjectDataFull[] = [
     category: "vue"
   },
   {
-    id: 25,
+    id: 26,
     img: ImgProjCard3,
     title: "FASHION SHOP",
     desc: "Um projeto pessoal com produtos de moda feminina, permitindo filtrar a sua categoria desejada.",
@@ -272,7 +283,7 @@ export const cardProjectsFull: ProjectDataFull[] = [
     category: "vue"
   },
   {
-    id: 26,
+    id: 27,
     img: ImgProjCard4,
     title: "E-COMMERCE SHOP",
     desc: "Loja virtual com categorias de produtos para filtrar e efetuar a compra.",
@@ -282,7 +293,7 @@ export const cardProjectsFull: ProjectDataFull[] = [
     category: "vue"
   },
   {
-    id: 27,
+    id: 28,
     img: ImgProjCard5,
     title: "MS PET",
     desc: "Proporciona o agendamento de uma visita para adoção de animais.",
@@ -292,7 +303,7 @@ export const cardProjectsFull: ProjectDataFull[] = [
     category: "vue"
   },
   {
-    id: 28,
+    id: 29,
     img: ImgProjCard6,
     title: "MS FOOD",
     desc: "Sistema de anotação de pedidos do cliente em restaurante.",
@@ -302,7 +313,7 @@ export const cardProjectsFull: ProjectDataFull[] = [
     category: "vue"
   },
   {
-    id: 29,
+    id: 30,
     img: ImgProjCard7,
     title: "MS NUTRI",
     desc: "Projeto de informações de alimentos nutritivos para saúde geral.",
@@ -312,7 +323,7 @@ export const cardProjectsFull: ProjectDataFull[] = [
     category: "vue"
   },
   {
-    id: 30,
+    id: 31,
     img: ImgProjCard8,
     title: "EMPLOYEE REGISTRATION",
     desc: "Aplicação com CRUD completo para registro, edição e gerenciamento completo de funcionários",
@@ -322,7 +333,7 @@ export const cardProjectsFull: ProjectDataFull[] = [
     category: "angular"
   },
   {
-    id: 31,
+    id: 32,
     img: ImgProjCard9,
     title: "ECOMMERCE STORE",
     desc: "Aplicação com CRUD completo para registro, edição e gerenciamento completo de loja virtual",
@@ -332,7 +343,7 @@ export const cardProjectsFull: ProjectDataFull[] = [
     category: "angular"
   },
   {
-    id: 32,
+    id: 33,
     img: ImgProjCard10,
     title: "SCHOOL MANAGEMENT",
     desc: "Aplicação com CRUD completo para registro, edição e gerenciamento completo de gestão escolar",
@@ -342,7 +353,7 @@ export const cardProjectsFull: ProjectDataFull[] = [
     category: "angular"
   },
   {
-    id: 33,
+    id: 34,
     img: ImgProjCard11,
     title: "MEDICAL APPOINTMENT MANAGEMENT",
     desc: "Aplicação com CRUD completo para registro, edição e gerenciamento completo de gestão de consulta médica",
@@ -352,7 +363,7 @@ export const cardProjectsFull: ProjectDataFull[] = [
     category: "angular"
   },
   {
-    id: 34,
+    id: 35,
     img: ImgProjCard8,
     title: "EMPLOYEE REGISTRATION",
     desc: "Aplicação com CRUD completo para registro, edição e gerenciamento completo de funcionários",
@@ -362,7 +373,7 @@ export const cardProjectsFull: ProjectDataFull[] = [
     category: "asp.net"
   },
   {
-    id: 35,
+    id: 36,
     img: ImgProjCard9,
     title: "ECOMMERCE STORE",
     desc: "Aplicação com CRUD completo para registro, edição e gerenciamento completo de loja virtual",
@@ -372,7 +383,7 @@ export const cardProjectsFull: ProjectDataFull[] = [
     category: "asp.net"
   },
   {
-    id: 36,
+    id: 37,
     img: ImgProjCard10,
     title: "SCHOOL MANAGEMENT",
     desc: "Aplicação com CRUD completo para registro, edição e gerenciamento completo de gestão escolar",
@@ -382,7 +393,7 @@ export const cardProjectsFull: ProjectDataFull[] = [
     category: "asp.net"
   },
   {
-    id: 37,
+    id: 38,
     img: ImgProjCard11,
     title: "MEDICAL APPOINTMENT MANAGEMENT",
     desc: "Aplicação com CRUD completo para registro, edição e gerenciamento completo de gestão de consulta médica",
@@ -392,7 +403,7 @@ export const cardProjectsFull: ProjectDataFull[] = [
     category: "asp.net"
   },
   {
-    id: 38,
+    id: 39,
     img: ImgProjCard8,
     title: "EMPLOYEE REGISTRATION",
     desc: "Aplicação com CRUD completo para registro, edição e gerenciamento completo de funcionários",
@@ -402,7 +413,7 @@ export const cardProjectsFull: ProjectDataFull[] = [
     category: "laravel"
   },
   {
-    id: 39,
+    id: 40,
     img: ImgProjCard9,
     title: "ECOMMERCE STORE",
     desc: "Aplicação com CRUD completo para registro, edição e gerenciamento completo de loja virtual",
@@ -412,7 +423,7 @@ export const cardProjectsFull: ProjectDataFull[] = [
     category: "laravel"
   },
   {
-    id: 40,
+    id: 41,
     img: ImgProjCard10,
     title: "SCHOOL MANAGEMENT",
     desc: "Aplicação com CRUD completo para registro, edição e gerenciamento completo de gestão escolar",
@@ -422,7 +433,7 @@ export const cardProjectsFull: ProjectDataFull[] = [
     category: "laravel"
   },
   {
-    id: 41,
+    id: 42,
     img: ImgProjCard11,
     title: "MEDICAL APPOINTMENT MANAGEMENT",
     desc: "Aplicação com CRUD completo para registro, edição e gerenciamento completo de gestão de consulta médica",
