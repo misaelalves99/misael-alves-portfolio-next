@@ -134,6 +134,16 @@ export const cardProjectsFull: ProjectDataFull[] = [
   },
   {
     id: 12,
+    img: ImgProjCard12,
+    title: "PATIENT RECORD",
+    desc: "Aplicação com CRUD completo para registro, edição e gerenciamento completo de gestão de pacientes e consulta médica",
+    icons: [RiNextjsLine, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
+    demo: "https://patient-record-next.vercel.app/",
+    github: "https://github.com/misaelalves99/patient-record-next",
+    category: "next"
+  },
+  {
+    id: 13,
     img: ImgProjCard8,
     title: "EMPLOYEE REGISTRATION",
     desc: "Aplicação com CRUD completo para registro, edição e gerenciamento completo de funcionários",
@@ -143,7 +153,7 @@ export const cardProjectsFull: ProjectDataFull[] = [
     category: "next"
   },
   {
-    id: 13,
+    id: 14,
     img: ImgProjCard9,
     title: "ECOMMERCE STORE",
     desc: "Aplicação com CRUD completo para registro, edição e gerenciamento completo de loja virtual",
@@ -153,7 +163,7 @@ export const cardProjectsFull: ProjectDataFull[] = [
     category: "next"
   },
   {
-    id: 14,
+    id: 15,
     img: ImgProjCard10,
     title: "SCHOOL MANAGEMENT",
     desc: "Aplicação com CRUD completo para registro, edição e gerenciamento completo de gestão escolar",
@@ -163,7 +173,7 @@ export const cardProjectsFull: ProjectDataFull[] = [
     category: "next"
   },
   {
-    id: 15,
+    id: 16,
     img: ImgProjCard11,
     title: "MEDICAL APPOINTMENT MANAGEMENT",
     desc: "Aplicação com CRUD completo para registro, edição e gerenciamento completo de gestão de consulta médica",
@@ -173,7 +183,7 @@ export const cardProjectsFull: ProjectDataFull[] = [
     category: "next"
   },
   {
-    id: 16,
+    id: 17,
     img: ImgProjCard1,
     title: "PORTFÓLIO",
     desc: "Este é meu portfólio pessoal. Aqui, mostro minhas principais habilidades como desenvolvedor front-end.",
@@ -183,7 +193,7 @@ export const cardProjectsFull: ProjectDataFull[] = [
     category: "next"
   },
   {
-    id: 17,
+    id: 18,
     img: ImgProjCard2,
     title: "MS E-COMMERCE",
     desc: "Loja virtual com categorias de produtos, filtros, detalhes e checkout.",
@@ -193,7 +203,7 @@ export const cardProjectsFull: ProjectDataFull[] = [
     category: "next"
   },
   {
-    id: 18,
+    id: 19,
     img: ImgProjCard3,
     title: "FASHION SHOP",
     desc: "Um projeto pessoal com produtos de moda feminina, permitindo filtrar a sua categoria desejada.",
@@ -203,7 +213,7 @@ export const cardProjectsFull: ProjectDataFull[] = [
     category: "next"
   },
   {
-    id: 19,
+    id: 20,
     img: ImgProjCard4,
     title: "E-COMMERCE SHOP",
     desc: "Loja virtual com categorias de produtos para filtrar e efetuar a compra.",
@@ -213,7 +223,7 @@ export const cardProjectsFull: ProjectDataFull[] = [
     category: "next"
   },
   {
-    id: 20,
+    id: 21,
     img: ImgProjCard5,
     title: "MS PET",
     desc: "Proporciona o agendamento de uma visita para adoção de animais.",
@@ -223,7 +233,7 @@ export const cardProjectsFull: ProjectDataFull[] = [
     category: "next"
   },
   {
-    id: 21,
+    id: 22,
     img: ImgProjCard6,
     title: "MS FOOD",
     desc: "Sistema de anotação de pedidos do cliente em restaurante.",
@@ -233,23 +243,13 @@ export const cardProjectsFull: ProjectDataFull[] = [
     category: "next"
   },
   {
-    id: 22,
+    id: 23,
     img: ImgProjCard7,
     title: "MS NUTRI",
     desc: "Projeto de informações de alimentos nutritivos para saúde geral.",
     icons: [RiNextjsLine, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
     demo: "https://ms-nutri-next.vercel.app/",
     github: "https://github.com/misaelalves99/ms-nutri-next",
-    category: "next"
-  },
-  {
-    id: 23,
-    img: ImgProjCard12,
-    title: "PATIENT RECORD",
-    desc: "Aplicação com CRUD completo para registro, edição e gerenciamento completo de gestão de pacientes e consulta médica",
-    icons: [RiNextjsLine, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
-    demo: "https://patient-record-next.vercel.app/",
-    github: "https://github.com/misaelalves99/patient-record-next",
     category: "next"
   },
   {
