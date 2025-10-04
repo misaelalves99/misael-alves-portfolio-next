@@ -7,8 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { FaLinkedinIn, FaGithub, FaInstagram, FaFacebookF, FaTwitter } from 'react-icons/fa';
-
-const perfilSrc = "/assets/img-perfil.png";
+import Perfil from "../../../../public/assets/img-perfil.png";
 
 export default function HeroAbout() {
   return (
@@ -35,7 +34,7 @@ export default function HeroAbout() {
       >
         <div className={styles.contactSocial}>
           <div className={styles.homeProfile}>
-            <Image src={perfilSrc} alt="Foto de perfil" width={200} height={200} />
+            <Image src={Perfil} alt="Foto de perfil" width={200} height={200} />
           </div>
           <div className={styles.socialMedia}>
             <Link href="https://www.linkedin.com/in/misael-alves-dos-santos-8510b11b0/" target='_blank'><FaLinkedinIn className={styles.iconSm} /></Link>
