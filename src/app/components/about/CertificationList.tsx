@@ -13,11 +13,15 @@ const categories = [
   "Todas",
   "React",
   "Next",
+  "Node",
   "TypeScript",
   "JavaScript",
-  "Node",
+  "C#",
   "MySQL",
   "Git GitHub",
+  "Testes Unitários",
+  "Metodologias Ágeis",
+  "Microsoft Office",
   "Outros",
 ];
 
