@@ -39,7 +39,7 @@ export default function HomeHero() {
           <Image src={Perfil} alt="Foto de perfil" width={200} height={200} />
         </div>
         <div className={styles.socialMedia}>
-          <Link href="https://www.linkedin.com/in/misael-alves-dos-santos-8510b11b0/" target="_blank">
+          <Link href="hhttps://www.linkedin.com/in/misaelalves/" target="_blank">
             <FaLinkedinIn className={styles.iconSm} />
           </Link>
           <Link href="https://github.com/misaelalves99" target="_blank">

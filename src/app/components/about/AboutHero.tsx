@@ -37,7 +37,7 @@ export default function HeroAbout() {
             <Image src={Perfil} alt="Foto de perfil" width={200} height={200} />
           </div>
           <div className={styles.socialMedia}>
-            <Link href="https://www.linkedin.com/in/misael-alves-dos-santos-8510b11b0/" target='_blank'><FaLinkedinIn className={styles.iconSm} /></Link>
+            <Link href="https://www.linkedin.com/in/misaelalves/" target='_blank'><FaLinkedinIn className={styles.iconSm} /></Link>
             <Link href="https://github.com/misaelalves99" target='_blank'><FaGithub className={styles.iconSm} /></Link>
             <Link href="https://www.instagram.com/misael_alves_99/" target='_blank'><FaInstagram className={styles.iconSm} /></Link>
             <Link href="https://www.facebook.com/misael.alves.92317/" target='_blank'><FaFacebookF className={styles.iconSm} /></Link>
