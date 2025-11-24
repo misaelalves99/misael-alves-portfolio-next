@@ -35,26 +35,6 @@ export const cardProjectsFull: ProjectDataFull[] = [
   },
   {
     id: 2,
-    img: ImgProjCard8,
-    title: "EMPLOYEE REGISTRATION",
-    desc: "Aplicação com CRUD completo para registro, edição e gerenciamento completo de funcionários.",
-    icons: [FaReact, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt, SiTestinglibrary, SiJest],
-    demo: "https://employee-registration-react-seven.vercel.app/",
-    github: "https://github.com/misaelalves99/employee-registration-react",
-    category: "react"
-  },
-  {
-    id: 3,
-    img: ImgProjCard9,
-    title: "ECOMMERCE STORE",
-    desc: "Aplicação com CRUD completo para registro, edição e gerenciamento completo de loja virtual",
-    icons: [FaReact, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt, SiTestinglibrary, SiJest],
-    demo: "https://ecommerce-store-react-seven.vercel.app/",
-    github: "https://github.com/misaelalves99/ecommerce-store-react",
-    category: "react"
-  },
-  {
-    id: 5,
     img: ImgProjCard10,
     title: "SCHOOL MANAGEMENT",
     desc: "Aplicação com CRUD completo para registro, edição e gerenciamento completo de gestão escolar",
@@ -64,7 +44,7 @@ export const cardProjectsFull: ProjectDataFull[] = [
     category: "react"
   },
   {
-    id: 6,
+    id: 3,
     img: ImgProjCard11,
     title: "MEDICAL APPOINTMENT MANAGEMENT",
     desc: "Aplicação com CRUD completo para registro, edição e gerenciamento completo de gestão de consulta médica",
@@ -73,16 +53,36 @@ export const cardProjectsFull: ProjectDataFull[] = [
     github: "https://github.com/misaelalves99/medical-appointment-system-react",
     category: "react"
   },
-  {
-    id: 7,
-    img: ImgProjCard1,
-    title: "PORTFÓLIO",
-    desc: "Este é meu portfólio pessoal. Aqui, mostro minhas principais habilidades como desenvolvedor front-end.",
-    icons: [FaReact, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
-    demo: "https://misael-alves-portfolio-react-one.vercel.app/",
-    github: "https://github.com/misaelalves99/misael-alves-portfolio-react",
-    category: "react"
-  },
+  // {
+  //   id: 4,
+  //   img: ImgProjCard9,
+  //   title: "ECOMMERCE STORE",
+  //   desc: "Aplicação com CRUD completo para registro, edição e gerenciamento completo de loja virtual",
+  //   icons: [FaReact, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt, SiTestinglibrary, SiJest],
+  //   demo: "https://ecommerce-store-react-seven.vercel.app/",
+  //   github: "https://github.com/misaelalves99/ecommerce-store-react",
+  //   category: "react"
+  // },
+  // {
+  //   id: 5,
+  //   img: ImgProjCard8,
+  //   title: "EMPLOYEE REGISTRATION",
+  //   desc: "Aplicação com CRUD completo para registro, edição e gerenciamento completo de funcionários.",
+  //   icons: [FaReact, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt, SiTestinglibrary, SiJest],
+  //   demo: "https://employee-registration-react-seven.vercel.app/",
+  //   github: "https://github.com/misaelalves99/employee-registration-react",
+  //   category: "react"
+  // },
+  // {
+  //   id: 7,
+  //   img: ImgProjCard1,
+  //   title: "PORTFÓLIO",
+  //   desc: "Este é meu portfólio pessoal. Aqui, mostro minhas principais habilidades como desenvolvedor front-end.",
+  //   icons: [FaReact, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
+  //   demo: "https://misael-alves-portfolio-react-one.vercel.app/",
+  //   github: "https://github.com/misaelalves99/misael-alves-portfolio-react",
+  //   category: "react"
+  // },
   {
     id: 8,
     img: ImgProjCard2,
@@ -144,37 +144,7 @@ export const cardProjectsFull: ProjectDataFull[] = [
     category: "react"
   },
   {
-    id: 14,
-    img: ImgProjCard12,
-    title: "PATIENT RECORD",
-    desc: "Aplicação com CRUD completo para registro, edição e gerenciamento completo de gestão de pacientes e consulta médica",
-    icons: [RiNextjsLine, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
-    demo: "https://patient-record-next.vercel.app/",
-    github: "https://github.com/misaelalves99/patient-record-next",
-    category: "next"
-  },
-  {
     id: 15,
-    img: ImgProjCard8,
-    title: "EMPLOYEE REGISTRATION",
-    desc: "Aplicação com CRUD completo para registro, edição e gerenciamento completo de funcionários",
-    icons: [RiNextjsLine, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt, SiTestinglibrary, SiJest],
-    demo: "https://employee-registration-next-tan.vercel.app/",
-    github: "https://github.com/misaelalves99/employee-registration-next",
-    category: "next"
-  },
-  {
-    id: 16,
-    img: ImgProjCard9,
-    title: "ECOMMERCE STORE",
-    desc: "Aplicação com CRUD completo para registro, edição e gerenciamento completo de loja virtual",
-    icons: [RiNextjsLine, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt, SiTestinglibrary, SiJest],
-    demo: "https://ecommerce-store-next-eta.vercel.app/",
-    github: "https://github.com/misaelalves99/ecommerce-store-next",
-    category: "next"
-  },
-  {
-    id: 17,
     img: ImgProjCard10,
     title: "SCHOOL MANAGEMENT",
     desc: "Aplicação com CRUD completo para registro, edição e gerenciamento completo de gestão escolar",
@@ -184,7 +154,7 @@ export const cardProjectsFull: ProjectDataFull[] = [
     category: "next"
   },
   {
-    id: 18,
+    id: 16,
     img: ImgProjCard11,
     title: "MEDICAL APPOINTMENT MANAGEMENT",
     desc: "Aplicação com CRUD completo para registro, edição e gerenciamento completo de gestão de consulta médica",
@@ -193,16 +163,36 @@ export const cardProjectsFull: ProjectDataFull[] = [
     github: "https://github.com/misaelalves99/medical-appointment-system-next",
     category: "next"
   },
-  {
-    id: 19,
-    img: ImgProjCard1,
-    title: "PORTFÓLIO",
-    desc: "Este é meu portfólio pessoal. Aqui, mostro minhas principais habilidades como desenvolvedor front-end.",
-    icons: [RiNextjsLine, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
-    demo: "https://misael-alves-portfolio-next.vercel.app/",
-    github: "https://github.com/misaelalves99/misael-alves-portfolio-next",
-    category: "next"
-  },
+  // {
+  //   id: 17,
+  //   img: ImgProjCard9,
+  //   title: "ECOMMERCE STORE",
+  //   desc: "Aplicação com CRUD completo para registro, edição e gerenciamento completo de loja virtual",
+  //   icons: [RiNextjsLine, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt, SiTestinglibrary, SiJest],
+  //   demo: "https://ecommerce-store-next-eta.vercel.app/",
+  //   github: "https://github.com/misaelalves99/ecommerce-store-next",
+  //   category: "next"
+  // },
+  // {
+  //   id: 18,
+  //   img: ImgProjCard8,
+  //   title: "EMPLOYEE REGISTRATION",
+  //   desc: "Aplicação com CRUD completo para registro, edição e gerenciamento completo de funcionários",
+  //   icons: [RiNextjsLine, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt, SiTestinglibrary, SiJest],
+  //   demo: "https://employee-registration-next-tan.vercel.app/",
+  //   github: "https://github.com/misaelalves99/employee-registration-next",
+  //   category: "next"
+  // },
+  // {
+  //   id: 19,
+  //   img: ImgProjCard1,
+  //   title: "PORTFÓLIO",
+  //   desc: "Este é meu portfólio pessoal. Aqui, mostro minhas principais habilidades como desenvolvedor front-end.",
+  //   icons: [RiNextjsLine, SiTypescript, FaJsSquare, FaHtml5, FaCss3Alt],
+  //   demo: "https://misael-alves-portfolio-next.vercel.app/",
+  //   github: "https://github.com/misaelalves99/misael-alves-portfolio-next",
+  //   category: "next"
+  // },
   {
     id: 20,
     img: ImgProjCard2,
