@@ -27,11 +27,10 @@ export default function ContactForm() {
     setErrorMessage("");
 
     try {
-      // Substitua por sua chave real do Web3Forms
       const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY;
 
       if (!accessKey) {
-        throw new Error("Chave de acesso Web3Forms ausente. Adicione NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY no .env.local");
+        throw new Error("Canal de contato temporariamente indisponível. Tente novamente mais tarde.");
       }
 
       const response = await fetch("https://api.web3forms.com/submit", {
@@ -50,15 +49,15 @@ export default function ContactForm() {
 
       const result = await response.json();
 
-      if (result.success) {
+      if (response.ok && result.success) {
         setStatus("success");
         setFormData({ name: "", email: "", message: "" });
       } else {
-        throw new Error(result.message || "Erro ao enviar mensagem.");
+        throw new Error(result.message || "Não foi possível enviar sua mensagem.");
       }
-    } catch (error: any) {
+    } catch (error: unknown) {
       setStatus("error");
-      setErrorMessage(error.message || "Erro inesperado. Tente novamente.");
+      setErrorMessage(error instanceof Error ? error.message : "Erro inesperado. Tente novamente.");
     }
   };
 
@@ -72,7 +71,8 @@ export default function ContactForm() {
               type="text"
               name="name"
               id="name"
-              placeholder="Seu Nome"
+              autoComplete="name"
+              placeholder="Seu nome"
               value={formData.name}
               onChange={handleChange}
               required
@@ -83,7 +83,8 @@ export default function ContactForm() {
               type="email"
               name="email"
               id="email"
-              placeholder="Seu Email"
+              autoComplete="email"
+              placeholder="Seu e-mail"
               value={formData.email}
               onChange={handleChange}
               required
@@ -93,7 +94,7 @@ export default function ContactForm() {
             <textarea
               name="message"
               id="message"
-              placeholder="Digite sua mensagem"
+              placeholder="Conte brevemente sobre seu projeto ou necessidade"
               value={formData.message}
               onChange={handleChange}
               required
@@ -104,16 +105,19 @@ export default function ContactForm() {
             type="submit"
             className={styles.formSubmit}
             disabled={status === "loading"}
+            aria-busy={status === "loading"}
           >
-            {status === "loading" ? "Enviando..." : "Enviar"}
+            {status === "loading" ? "Enviando..." : "Enviar mensagem"}
           </button>
 
-          {status === "success" && (
-            <p className={styles.successMsg}>✅ Mensagem enviada com sucesso!</p>
-          )}
-          {status === "error" && (
-            <p className={styles.errorMsg}>❌ {errorMessage}</p>
-          )}
+          <div aria-live="polite" role="status">
+            {status === "success" && (
+              <p className={styles.successMsg}>Mensagem enviada com sucesso.</p>
+            )}
+            {status === "error" && (
+              <p className={styles.errorMsg}>{errorMessage}</p>
+            )}
+          </div>
         </form>
       </div>
     </section>
