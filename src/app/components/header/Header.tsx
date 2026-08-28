@@ -10,18 +10,18 @@ import Logo from "../../../../public/assets/logo.png";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
-  const toggleMenu = () => setIsOpen(!isOpen);
+  const toggleMenu = () => setIsOpen((current) => !current);
 
   return (
     <header className={styles.header}>
       <div className={styles.containerHeader}>
         <div className={styles.logo}>
-          <Link href="/">
-            <Image src={Logo} alt="Logo" width={100} height={50} />
+          <Link href="/" aria-label="Ir para a página inicial">
+            <Image src={Logo} alt="Misael Alves" width={100} height={50} />
           </Link>
         </div>
 
-        <nav className={styles.navbar}>
+        <nav className={styles.navbar} aria-label="Navegação principal">
           <ul className={styles.desktopMenu}>
             <li><Link href="/">Home</Link></li>
             <li><Link href="/about">Sobre</Link></li>
@@ -31,13 +31,24 @@ export default function Header() {
             <li><Link href="/contact">Contato</Link></li>
           </ul>
 
-          <button className={`${styles.menuButton} ${isOpen ? styles.open : ""}`} onClick={toggleMenu}>
+          <button
+            type="button"
+            className={`${styles.menuButton} ${isOpen ? styles.open : ""}`}
+            onClick={toggleMenu}
+            aria-label={isOpen ? "Fechar menu" : "Abrir menu"}
+            aria-expanded={isOpen}
+            aria-controls="mobile-navigation"
+          >
             <div className={styles.bar}></div>
             <div className={styles.bar}></div>
             <div className={styles.bar}></div>
           </button>
 
-          <div className={`${styles.fullscreenMenu} ${isOpen ? styles.open : ""}`}>
+          <div
+            id="mobile-navigation"
+            className={`${styles.fullscreenMenu} ${isOpen ? styles.open : ""}`}
+            aria-hidden={!isOpen}
+          >
             <ul className={styles.menuList}>
               <li><Link href="/" onClick={toggleMenu}>Home</Link></li>
               <li><Link href="/about" onClick={toggleMenu}>Sobre</Link></li>
