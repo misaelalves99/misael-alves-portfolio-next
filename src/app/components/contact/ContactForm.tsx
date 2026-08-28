@@ -6,6 +6,9 @@ import { useState } from "react";
 import styles from "./ContactForm.module.css";
 import { FormData } from "@/app/types/form-data";
 
+const whatsappUrl =
+  "https://wa.me/5533997171333?text=Ol%C3%A1%2C%20Misael.%20Gostaria%20de%20conversar%20sobre%20um%20projeto.";
+
 export default function ContactForm() {
   const [formData, setFormData] = useState<FormData>({
     name: "",
@@ -67,56 +70,27 @@ export default function ContactForm() {
         <form onSubmit={handleSubmit} className={styles.form}>
           <div className={styles.formContact}>
             <label htmlFor="name">Nome:</label>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              autoComplete="name"
-              placeholder="Seu nome"
-              value={formData.name}
-              onChange={handleChange}
-              required
-            />
-
+            <input type="text" name="name" id="name" autoComplete="name" placeholder="Seu nome" value={formData.name} onChange={handleChange} required />
             <label htmlFor="email">E-mail:</label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              autoComplete="email"
-              placeholder="Seu e-mail"
-              value={formData.email}
-              onChange={handleChange}
-              required
-            />
-
+            <input type="email" name="email" id="email" autoComplete="email" placeholder="Seu e-mail" value={formData.email} onChange={handleChange} required />
             <label htmlFor="message">Mensagem:</label>
-            <textarea
-              name="message"
-              id="message"
-              placeholder="Conte brevemente sobre seu projeto ou necessidade"
-              value={formData.message}
-              onChange={handleChange}
-              required
-            />
+            <textarea name="message" id="message" placeholder="Conte brevemente sobre seu projeto ou necessidade" value={formData.message} onChange={handleChange} required />
           </div>
 
-          <button
-            type="submit"
-            className={styles.formSubmit}
-            disabled={status === "loading"}
-            aria-busy={status === "loading"}
-          >
+          <button type="submit" className={styles.formSubmit} disabled={status === "loading"} aria-busy={status === "loading"}>
             {status === "loading" ? "Enviando..." : "Enviar mensagem"}
           </button>
 
           <div aria-live="polite" role="status">
-            {status === "success" && (
-              <p className={styles.successMsg}>Mensagem enviada com sucesso.</p>
-            )}
-            {status === "error" && (
-              <p className={styles.errorMsg}>{errorMessage}</p>
-            )}
+            {status === "success" && <p className={styles.successMsg}>Mensagem enviada com sucesso.</p>}
+            {status === "error" && <p className={styles.errorMsg}>{errorMessage}</p>}
+          </div>
+
+          <div className={styles.fallbackContact}>
+            <span>Prefere falar diretamente?</span>
+            <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className={styles.whatsappLink} aria-label="Conversar com Misael pelo WhatsApp">
+              Falar pelo WhatsApp
+            </a>
           </div>
         </form>
       </div>
