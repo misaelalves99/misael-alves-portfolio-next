@@ -6,16 +6,15 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "css-modules": "^0.3.0",
     "framer-motion": "^12.6.3",
     "next": "15.5.24",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.5.0",
-    "react-reveal": "^1.2.2",
     "react-typical": "^0.1.3"
   },
   "devDependencies": {
