@@ -1,7 +1,7 @@
 // app/api/data/projects-full.ts
 
 import { FaReact, FaHtml5, FaCss3Alt, FaJsSquare, FaAngular, FaLaravel, FaPhp, FaDocker } from "react-icons/fa";
-import { SiTypescript, SiNextdotjs, SiVuedotjs, SiTestinglibrary, SiJest, SiJasmine, SiDotnet } from "react-icons/si";
+import { SiTypescript, SiVuedotjs, SiTestinglibrary, SiJest, SiJasmine, SiDotnet } from "react-icons/si";
 import { RiNextjsLine } from "react-icons/ri";
 import { TbBrandCSharp } from "react-icons/tb";
 import { AiOutlineExperiment } from "react-icons/ai";
@@ -17,7 +17,6 @@ import ImgProjCard8 from "../../../../public/assets/img-projeto-card-08.png";
 import ImgProjCard9 from "../../../../public/assets/img-projeto-card-09.png";
 import ImgProjCard10 from "../../../../public/assets/img-projeto-card-10.png";
 import ImgProjCard11 from "../../../../public/assets/img-projeto-card-11.png";
-import ImgProjCard12 from "../../../../public/assets/img-projeto-card-12.png";
 import ImgProjCard13 from "../../../../public/assets/img-projeto-card-13.png";
 
 import { ProjectDataFull } from "../../types/project-data-full";
