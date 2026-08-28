@@ -1,0 +1,61 @@
+name: Devtool cleanup
+
+on:
+  push:
+    branches:
+      - task/portfolio-devtool-cleanup
+    paths:
+      - .github/workflows/devtool-cleanup.yml
+
+permissions:
+  contents: write
+
+jobs:
+  cleanup:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: task/portfolio-devtool-cleanup
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Remove known unused imports
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('src/app/api/data/projects-full.ts')
+          s = p.read_text()
+          s = s.replace('SiTypescript, SiNextdotjs, SiVuedotjs', 'SiTypescript, SiVuedotjs')
+          s = s.replace('import ImgProjCard12 from "../../../../public/assets/img-projeto-card-12.png";\n', '')
+          p.write_text(s)
+          PY
+      - name: Install from lockfile
+        run: npm ci --legacy-peer-deps
+      - name: Audit before safe fix
+        run: npm audit --json || true
+      - name: Apply non-breaking npm audit fix to lockfile only
+        run: npm audit fix --package-lock-only --legacy-peer-deps || true
+      - name: Reinstall from resulting lockfile
+        run: npm ci --legacy-peer-deps
+      - name: Lint with zero-warning gate
+        run: npm run lint -- --max-warnings=0
+      - name: Build
+        run: npm run build
+      - name: Verify production audit remains clean
+        run: npm audit --omit=dev --audit-level=low
+      - name: Audit after safe fix
+        run: npm audit --json || true
+      - name: Commit validated cleanup
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/app/api/data/projects-full.ts package-lock.json
+          if git diff --cached --quiet; then
+            echo "No validated changes to commit"
+            exit 0
+          fi
+          git commit -m "chore: clean lint warnings and refresh dev audit lockfile"
+          git push origin HEAD:task/portfolio-devtool-cleanup
