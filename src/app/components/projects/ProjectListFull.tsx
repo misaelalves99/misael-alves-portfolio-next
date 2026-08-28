@@ -12,6 +12,8 @@ interface ProjectListFullProps {
   selectedCategory: string;
 }
 
+const featuredProjectIds = new Set([15, 16, 20, 22]);
+
 export default function ProjectListFull({ selectedCategory }: ProjectListFullProps) {
   const [projectsData, setProjectsData] = useState<ProjectDataFull[]>([]);
 
@@ -25,7 +27,7 @@ export default function ProjectListFull({ selectedCategory }: ProjectListFullPro
   }, []);
 
   const filteredProjects = projectsData.filter(
-    (project) => project.category === selectedCategory
+    (project) => project.category === selectedCategory && featuredProjectIds.has(project.id)
   );
 
   return (
