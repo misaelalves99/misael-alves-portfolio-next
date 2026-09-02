@@ -4,10 +4,10 @@ export const cardFormation = [
     {
     id: 1,
     img: "/assets/img-card.png",
-    title: "GRADUANDO",
+    title: "GRADUAÇÃO INICIADA",
     curso: "Sistemas de Informação",
     instituicao: "Universidade Presidente Antônio Carlos - UNIPAC",
-    periodo: "Início: 28/07/2025 - Atual: 1º período",
+    periodo: "Início: 28/07/2025 - Matrícula trancada desde 12/2025",
     dipl: "/",
   },
   {
